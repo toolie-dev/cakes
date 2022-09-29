@@ -5,9 +5,11 @@ import HeaderContainer from '../Header/HeaderContainer';
 import Index from '../Index/Index';
 import Auth from '../Auth/Auth';
 
-const App = () => {
+const App = (props) => {
     return (
         <BrowserRouter>
+            <button onClick={ () => { props.toggleAuthState(true) } }>button</button>
+            <br/>
             рурр
             {/*
             <HeaderContainer />
@@ -15,7 +17,10 @@ const App = () => {
               <Route path='/index' element={<Index />} />
             </Routes>
             */}
-            <Auth />
+            {props.isShowAuth && 
+            <div onClick={props.onClickCanvas} className="canvas">
+                <Auth toggleAuthState={props.toggleAuthState} />
+            </div>}
         </BrowserRouter>
     );
 }
