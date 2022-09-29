@@ -1,0 +1,9 @@
+body{
+    height: 10000px;
+}
+
+*{
+    font-family: 'Verdana';
+    font-weight: 400;
+    font-size: 1rem;
+}

@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Yeseva+One&display=swap');
+
+@font-face {
+	font-family: 'Verdana';
+	src: url("./assets/fonts/Verdana.woff") format("woff"), url("./assets/fonts/Verdana.woff2") format("woff2");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Verdana';
+	src: url("./assets/fonts/Verdana-Bold.woff") format("woff"), url("./assets/fonts/Verdana-Bold.woff2") format("woff2");
+	font-weight: 700;
+}
