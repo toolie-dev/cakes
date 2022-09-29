@@ -1,0 +1,11 @@
+.img{
+    display: block;
+}
+
+.img img{
+    height: 100%;
+}
+
+.img_75{
+    height: 4.6875rem;/*75*/
+}
