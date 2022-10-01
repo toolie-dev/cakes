@@ -1,14 +1,14 @@
 import s from "./Auth.module.css";
 import HeaderAuth from "../HeaderAuth/HeaderAuth";
-import cookie from "../../assets/icons/cookie.svg";
-import cupcake from "../../assets/icons/cupcake.svg";
+import cookie from "../../../assets/icons/cookie.svg";
+import cupcake from "../../../assets/icons/cupcake.svg";
 
 const Auth = (props) => {
     return(
-        <section className={s.auth}>
-            <HeaderAuth title="Реєстрація" closePopup={( ) => { props.toggleAuthState(false) } } />
+        <>
+            <HeaderAuth title="Реєстрація" setTypePopup={props.setTypePopup} />
             <div className={s.main}>
-                <div className={s.item}>
+                <button onClick={ () => { props.setTypePopup("registration") } } className={s.item}>
                     <div className={s.wrapper}>
                         <div className="img img_75">
                             <img src={cookie} alt="cookie" />
@@ -21,8 +21,8 @@ const Auth = (props) => {
                     <div className={s.button}>
                         <div className={s.btn}>&rsaquo;</div>
                     </div>
-                </div>
-                <div className={s.item}>
+                </button>
+                <button onClick={ () => { props.setTypePopup("registration") } } className={s.item}>
                     <div className={s.wrapper}>
                         <div className="img img_75">
                             <img src={cupcake} alt="cookie" />
@@ -35,12 +35,10 @@ const Auth = (props) => {
                     <div className={s.button}>
                         <div className={s.btn}>&rsaquo;</div>
                     </div>
-                </div>
+                </button>
             </div>
-            <div className={s.footer}>
-                <button className={s.href}>Я вже маю акаунт, хочу просто увійти</button>
-            </div>
-        </section>
+            <button onClick={ () => { props.setTypePopup("login") } } className={s.href}>Я вже маю акаунт, хочу просто увійти</button>
+        </>
     )
 }
 

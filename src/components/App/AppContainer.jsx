@@ -2,16 +2,16 @@ import { useState } from "react";
 import App from "./App";
 
 const AppContainer = (props) => {
-    const [isShowAuth, toggleAuthState] = useState(false);
+    const [typePopup, setTypePopup] = useState("login");
 
     const onClickCanvas = (e) => {
         if(e.target.classList.contains("canvas")){
-            toggleAuthState(false);
+            setTypePopup("");
         }
     }
 
     return (
-        <App {...props} isShowAuth={isShowAuth} toggleAuthState={toggleAuthState} onClickCanvas={onClickCanvas}/>
+        <App {...props} typePopup={typePopup} setTypePopup={setTypePopup} onClickCanvas={onClickCanvas}/>
     );
 }
 

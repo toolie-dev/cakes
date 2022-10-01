@@ -19,3 +19,7 @@ body{
     height: 100vh;
     background: rgba(0, 0, 0, 0.8);
 }
+
+button,a{
+    cursor: pointer;
+}

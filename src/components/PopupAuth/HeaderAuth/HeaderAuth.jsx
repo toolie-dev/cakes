@@ -4,7 +4,7 @@ const HeaderAuth = (props) => {
     return (
         <div className={s.header}>
             <h1 className={"title title_auth"}>{props.title}</h1>
-            <button onClick={props.closePopup} className={s.close}>&#10006;</button>
+            <button onClick={ () => { props.setTypePopup("") } } className={s.close}>&#10006;</button>
         </div>
     )
 }

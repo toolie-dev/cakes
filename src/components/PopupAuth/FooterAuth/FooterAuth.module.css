@@ -1,0 +1,28 @@
+.title{
+    color: #011936;
+    margin-bottom: 1.25rem;/*20*/
+}
+
+.btns{
+    display: flex;
+    gap: 0.625rem;/*10*/
+    margin-bottom: 1.25rem;/*20*/
+}
+
+.btn{
+    display: flex;
+    background: #DCEBF8;
+    border-radius: 0.625rem;/*10*/
+    padding: 0.625rem 2.8125rem;/*10 45*/
+    align-items: center;
+}
+
+.text{
+    color: #43607C;
+    margin-left: 0.9375rem;/*15*/
+}
+
+.href{
+    text-decoration-line: underline;
+    color: #84A6C2;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import './nullstyle.css';
+//import './nullstyle.css';
 import './title.css';
 import './img.css';
 import AppContainer from './components/App/AppContainer';

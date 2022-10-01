@@ -6,6 +6,10 @@
     height: 100%;
 }
 
+.img_20{
+    height: 1.25rem;/*20*/
+}
+
 .img_75{
     height: 4.6875rem;/*75*/
 }

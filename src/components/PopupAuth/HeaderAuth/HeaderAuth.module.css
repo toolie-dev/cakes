@@ -1,5 +1,4 @@
 .header{
-    margin-bottom: 2.5rem;/*40*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,6 +6,5 @@
 
 .close{
     color: #7FA0BB;
-    cursor: pointer;
     font-size: 1.5625rem;/*25*/
 }
