@@ -6,10 +6,34 @@
     height: 100%;
 }
 
+.img_6{
+    height: 0.375rem;/*6*/
+}
+
+.img_15{
+    height: 0.9375rem;/*15*/
+}
+
 .img_20{
     height: 1.25rem;/*20*/
 }
 
+.img_24{
+    height: 1.5rem;/*24*/
+}
+
+.img_30{
+    height: 1.875rem;/*30*/
+}
+
+.img_40{
+    height: 2.5rem;/*40*/
+}
+
 .img_75{
     height: 4.6875rem;/*75*/
+}
+
+.img_100{
+    height: 6.25rem;/*100*/
 }

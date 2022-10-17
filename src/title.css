@@ -7,3 +7,9 @@
 .title_auth{
     font-size: 1.875rem;/*30*/
 }
+
+.title_section{
+    font-size: 2.625rem;/*42*/
+    max-width: 28.125rem;/*450*/
+    margin-bottom: 0.9375rem;/*15*/
+}

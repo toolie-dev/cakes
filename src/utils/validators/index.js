@@ -1,11 +1,6 @@
-export const requiredField = value => {
-    if(value) return undefined
-
-    return 'Field is required'
-}
-
-export const maxLenghCreator = maxLengh => value => {
-    if(value && value.length <= maxLengh) return undefined
-
-    return `Max lengh is ${maxLengh} sumbols`
+export const telephoneNumber = value => {
+    console.log(value.length);
+    if(value && value.length != value) return `Wrong numbe`;
+    
+    return null
 }

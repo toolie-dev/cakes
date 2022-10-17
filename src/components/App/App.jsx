@@ -1,22 +1,25 @@
 import './App.css';
 import { Routes, BrowserRouter, Route } from "react-router-dom";
-import Container from '../common/Container/Container';
 import HeaderContainer from '../Header/HeaderContainer';
 import Index from '../Index/Index';
-import PopupAuthContainer from '../PopupAuth/PopupAuthContainer';
+import PopupMenu from '../PopupManu/PopupMenu';
+import PopupAuth from '../PopupAuth/PopupAuth';
 
 const App = (props) => {
     return (
         <BrowserRouter>
-            <button onClick={ () => { props.setTypePopup("login") } }>button</button>
-            <br/>
-            {/*
-            <HeaderContainer />
             <Routes>
-              <Route path='/index' element={<Index />} />
+                <Route path='/index' element={<HeaderContainer />} />
             </Routes>
-            */}
-            {props.typePopup && <PopupAuthContainer typePopup={props.typePopup} setTypePopup={props.setTypePopup} onClickCanvas={props.onClickCanvas} />}
+            <Routes>
+                <Route path='/index' element={<Index />} />
+            </Routes>
+            <button onClick={ () => { props.setTypePopup("auth") } }>button</button><br />
+            <button onClick={ () => { props.setTypePopup("menu") } }>button2</button>
+
+            <PopupMenu isShow={props.typePopup === "menu"} typePopup={props.typePopup} setTypePopup={props.setTypePopup} onClickCanvas={props.onClickCanvas} />
+            <PopupAuth isShow={props.typePopup === "auth" && props.typePopup === "login" && props.typePopup === "registration"}
+            typePopup={props.typePopup} setTypePopup={props.setTypePopup} onClickCanvas={props.onClickCanvas} />
         </BrowserRouter>
     );
 }

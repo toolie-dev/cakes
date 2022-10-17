@@ -3,20 +3,21 @@ import FooterAuth from "../FooterAuth/FooterAuth";
 import HeaderAuth from "../HeaderAuth/HeaderAuth";
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { Input } from "../../common/FormControls/FormControls";
+import { telephoneNumber } from "../../../utils/validators/index";
+import Canvas from "../../common/Canvas/Canvas";
+
+
 
 const LoginForm = (props) => {
     return (
         <Formik
         initialValues={{ tel: '' }}
         validate={values => {
-            const errors = {};
-            if (!values.tel) {
-            errors.tel = 'Required';
-            } else if (
-            !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-            ) {
-            errors.tel = 'Invalid email address';
-            }
+            const tel = telephoneNumber(values.tel);
+            const errors = {
+                tel
+            };
+            console.log(errors);
             return errors;
         }}
         onSubmit={(values, { setSubmitting }) => {
@@ -42,11 +43,13 @@ const LoginForm = (props) => {
 //Input
 const Login = (props) => {
     return(
-        <>
-            <HeaderAuth title="Вхід" setTypePopup={props.setTypePopup} />
-            <LoginForm {...props} />
-            <FooterAuth isRegistration={false} onClick={ () => { props.setTypePopup("auth") } } />
-        </>
+        <Canvas isShow={props.isShow} timeout={1000} onClickCanvas={props.onClickCanvas}>
+            <section className={s.auth}>
+                <HeaderAuth title="Вхід" setTypePopup={props.setTypePopup} />
+                <LoginForm {...props} />
+                <FooterAuth isRegistration={false} onClick={ () => { props.setTypePopup("auth") } } />
+            </section>
+        </Canvas>
     )
 }
 

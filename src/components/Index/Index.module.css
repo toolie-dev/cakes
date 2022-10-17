@@ -1,0 +1,4 @@
+.main{
+    margin-top: calc((1.25rem * 2) + 2.5rem);/*(20 * 2) + 40*/
+    padding: 2.5rem 0 5rem 0;/*40 80*/
+}

@@ -1,8 +1,11 @@
-//import s from "./Index.module.css"
+import s from "./Index.module.css"
+import Promo from "./Promo/Promo";
 
 const Index = (props) => {
     return(
-        <div>Index</div>
+        <main className={s.main}>
+            <Promo />
+        </main>
     )
 }
 
