@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import "./nullstyle.css";
-import "./title.css";
-import "./subtitle.css";
-import "./img.css";
-import "./btn.css"
+import "./css/nullstyle.css";
+import "./css/title.css";
+import "./css/subtitle.css";
+import "./css/img.css";
+import "./css/btn.css";
+import "./css/react-slick.css";
 import AppContainer from "./components/App/AppContainer";
 import store from "./redux/store";
 import { Provider } from "react-redux";

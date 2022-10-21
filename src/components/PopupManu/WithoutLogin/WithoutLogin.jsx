@@ -24,7 +24,7 @@ const WithoutLogin = (props) => {
                     </nav>
                 </div>
                 <div className={s.item}>
-                    <button className={s.btn}>
+                    <button onClick={ () => { props.setTypePopup("auth") } } className={s.btn}>
                         <div className="img img_20">
                             <img src={user_brown} alt="user" />
                         </div>

@@ -13,3 +13,31 @@
 .wrap{
     width: 100%;
 }
+
+.search{
+    display: none;
+}
+
+@media (max-width: 100rem){/*1600*/
+}
+
+@media (max-width: 87.5rem){/*1400*/
+}
+
+@media (max-width: 75rem){/*1200*/
+}
+
+@media (max-width: 62rem){/*992*/
+}
+
+@media (max-width: 47.625rem){/*762*/
+    .search{
+        display: block;
+    }
+    .text{
+        display: none;
+    }
+}
+
+@media (max-width: 36rem){/*576*/
+}

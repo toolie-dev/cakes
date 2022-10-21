@@ -4,7 +4,6 @@ import Login from "./Login/Login";
 import Registratin from "./Registration/Registration";
 
 const PopupAuth = (props) => {
-    console.log(props);
     return (
         <>
             <Auth isShow={props.typePopup === "auth"} setTypePopup={props.setTypePopup} onClickCanvas={props.onClickCanvas} />

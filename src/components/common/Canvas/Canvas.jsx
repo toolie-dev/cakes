@@ -10,7 +10,7 @@ const Canvas = (props) => {
         unmountOnExit
         >
             {state => (
-                <div onClick={ props.onClickCanvas } className={`canvas ${state}`}>
+                <div onClick={ props.onClickCanvas } className={`canvas ${state}${(props.isShowHeader)? " showHeader" : ""}`}>
                     {props.children}
                 </div>
             )}

@@ -6,9 +6,10 @@ import StaticMenu from "./StaticMenu/StaticMenu";
 import Canvas from "../common/Canvas/Canvas";
 
 const PopupMenu = (props) => {
+    /*
     const Menu = () => {
         //номера menu
-        const number = 4;
+        const number = 3;
         if(number === 1) {
             return <WithoutLogin />
         }else if (number === 2) {
@@ -19,10 +20,14 @@ const PopupMenu = (props) => {
             return <StaticMenu />
         }
     }
+    */
+
     return(
-        <Canvas isShow={props.isShow} timeout={1000} onClickCanvas={props.onClickCanvas}>
+        <Canvas isShowHeader={true} isShow={props.isShow} timeout={1000} onClickCanvas={props.onClickCanvas}>
             <section className={s.menu}>
-                <Menu />
+                {props.isAuth || <WithoutLogin setTypePopup={props.setTypePopup} />}
+                {(props.isAuth && props.typeUser === "user") && <UsersMenu />}
+                {(props.isAuth && props.typeUser === "confectioner") && <ConfectionersMenu />}
             </section>
         </Canvas>
     )

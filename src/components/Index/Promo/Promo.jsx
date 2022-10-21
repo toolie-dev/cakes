@@ -14,7 +14,7 @@ import arrowRight from "../../../assets/icons/arrow/arrow_right.svg";
 
 import Container from "../../common/Container/Container";
 import s from "./Promo.module.css";
-import SubspeciesCard from "../../SubspeciesCard/SubspeciesCard";
+import SubspeciesCard from "../SubspeciesCard/SubspeciesCard";
 import PromoForm from "./PromoForm/PromoForm";
 
 const Promo = (props) => {
@@ -66,17 +66,15 @@ const Promo = (props) => {
                             </div>
                         </div>
                     </div>
-                    <div className={s.gallery}>
-                        <div className={s.images}>
-                            <div className={s.img}>
-                                <img src={img_1} alt="img" />
-                            </div>
-                            <div className={s.img}>
-                                <img src={img_2} alt="img" />
-                            </div>
-                            <div className={`${s.img} ${s.big}`}>
-                                <img src={img_3} alt="img" />
-                            </div>
+                    <div className={s.images}>
+                        <div className={s.img}>
+                            <img src={img_1} alt="img" />
+                        </div>
+                        <div className={s.img}>
+                            <img src={img_2} alt="img" />
+                        </div>
+                        <div className={`${s.img} ${s.big}`}>
+                            <img src={img_3} alt="img" />
                         </div>
                     </div>
                 </div>
