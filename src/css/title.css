@@ -1,36 +1,57 @@
 .title{
     font-family: 'Yeseva One';
     color: #011936;
+    font-size: 2.1875rem;/*35*/
 }
 
 .title_auth{
     font-size: 1.875rem;/*30*/
 }
 
-.title_section{
+.title_main{
     font-size: 2.625rem;/*42*/
     max-width: 28.125rem;/*450*/
     margin-bottom: 0.9375rem;/*15*/
 }
 
 .title_product{
-    font-size: 2.1875rem;/*35*/
+}
+
+.title_section{
+    margin-bottom: 0.625rem;/*16*/
+    text-align: center;
 }
 
 @media (max-width: 100rem){/*1600*/
+    .title{
+        font-size: 2rem;/*32*/
+    }
 }
 
 @media (max-width: 87.5rem){/*1400*/
+    .title{
+        font-size: 1.875rem;/*30*/
+    }
 }
 
 @media (max-width: 75rem){/*1200*/
+    .title{
+        font-size: 1.75rem;/*28*/
+    }
 }
 
 @media (max-width: 62rem){/*992*/
+    .title{
+        font-size: 1.625rem;/*26*/
+    }
 }
 
 @media (max-width: 47.625rem){/*762*/
-    .title_section{
+    .title{
+        font-size: 1.5rem;/*24*/
+    }
+
+    .title_mani{
         font-size: 1.875rem;/*30*/
         max-width: none;
     }

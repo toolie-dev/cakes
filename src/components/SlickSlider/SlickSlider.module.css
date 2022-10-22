@@ -20,28 +20,6 @@
     gap: 0 0.3125rem;/*5*/
 }
 
-.sliderList{
-    display: flex;
-    justify-content: space-between;
-}
-
-.allList{
-    cursor: grab;
-    width: 600px;
-    display: flex;
-    justify-content: space-between;
-    overflow-x: scroll;
-}
-
-.allList::-webkit-scrollbar {
-    display: none;
-}
-
-.wrapper{
-    display: flex;
-    gap: 0 1.25rem;/*20*/
-}
-
 @media (max-width: 100rem){/*1600*/
 }
 
@@ -64,10 +42,4 @@
 }
 
 @media (max-width: 36rem){/*576*/
-}
-
-@media (max-width: 23.4375rem){/*375*/
-    .wrap{
-        display: none;
-    }
 }

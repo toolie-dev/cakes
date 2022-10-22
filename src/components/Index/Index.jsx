@@ -10,11 +10,19 @@ import CupcakesPhoto_3 from "../../assets/img/Goods/Cupcakes/photo_3.png";
 import CupcakesPhoto_4 from "../../assets/img/Goods/Cupcakes/photo_4.png";
 import CupcakesPhoto_5 from "../../assets/img/Goods/Cupcakes/photo_5.png";
 
-import s from "./Index.module.css"
-import ProductSliderContainer from "./ProductSlider/ProductSliderContainer";
-import Promo from "./Promo/Promo";
+import ConfectionersPhoto_1 from "../../assets/img/Confectioners/photo_1.png";
+import ConfectionersPhoto_2 from "../../assets/img/Confectioners/photo_2.png";
+import ConfectionersPhoto_3 from "../../assets/img/Confectioners/photo_3.png";
 
-const list1 = [
+import s from "./Index.module.css"
+import Info from "./Info/Info";
+import Promo from "./Promo/Promo";
+import SlickSlider from "../SlickSlider/SlickSlider";
+import CardProduct from "../Cards/CardProduct/CardProduct.jsx";
+import CardConfectioner from "../Cards/CardConfectioner/CardConfectioner";
+import CardArticle from "../Cards/CardArticle/CardArticles";
+
+const listProduct_1 = [
     {
         img: CakesPhoto_1,
         cost: "520 грн",
@@ -47,7 +55,7 @@ const list1 = [
     }
 ]
 
-const list2 = [
+const listProduct_2 = [
     {
         img: CupcakesPhoto_1,
         cost: "520 грн",
@@ -80,12 +88,79 @@ const list2 = [
     }
 ]
 
+const listConfectioners = [
+    {
+        img: ConfectionersPhoto_1,
+        name: "Інна Пономаренко",
+        reviews: 23,
+        desc: "Кондитер IV разряда и автор «Школа юного кондитера» Рекордсмен книги рекордов...",
+        tags: ["Торти", "Цукерки", "Капкейки", "Макаруни", "Кейк-попси"]
+    },
+    {
+        img: ConfectionersPhoto_2,
+        name: "Home Bakery",
+        reviews: 59,
+        desc: "Кондитер IV разряда и автор «Школа юного кондитера» Рекордсмен книги рекордов...",
+        tags: ["Торти", "Капкейки", "Цукерки", "Макаруни", "Кейк-попси"]
+    },
+    {
+        img: ConfectionersPhoto_3,
+        name: "Іванна Марченко",
+        reviews: 15,
+        desc: "Кондитер IV разряда и автор «Школа юного кондитера» Рекордсмен книги рекордов...",
+        tags: ["Макаруни", "Капкейки", "Цукерки", "Торти", "Кейк-попси"]
+    }
+]
+
+const listArticles = [
+    {
+
+    },
+    {
+
+    },
+    {
+
+    },
+    {
+        
+    },
+    {
+        
+    }
+]
+
 const Index = (props) => {
+    const itemsProduct_1 = listProduct_1.map((item, i) => <CardProduct key={i++} {...item} />),
+        itemsProduct_2 = listProduct_2.map((item, i) => <CardProduct key={i++} {...item} />),
+        confectioners = listConfectioners.map((item, i) => <CardConfectioner key={i++} {...item} />),
+        articles = listArticles.map((item, i) => <CardArticle key={i++} {...item} />);
     return(
         <main className={s.main}>
             <Promo />
-            <ProductSliderContainer title="Торти" list={list1} />
-            <ProductSliderContainer title="Капкейки" list={list2} />
+            <SlickSlider items={itemsProduct_1} title="Торти" />
+            <SlickSlider items={itemsProduct_2} title="Капкейки" />
+            {props.isAuth || <Info setTypePopup={props.setTypePopup} />}
+            <SlickSlider settings={{
+                slidesToShow: 3,
+                responsive: [
+                    {
+                        breakpoint: 1600,
+                        settings: {
+                            slidesToShow: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 1,
+                        }
+                    }
+                ]
+            }} items={confectioners} title="Кращі кондитери" />
+            {/*
+            <SlickSlider items={articles} title="Статті" />
+            */}
         </main>
     )
 }

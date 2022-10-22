@@ -1,9 +1,10 @@
-import s from "./Item.module.css";
+import s from "./CardProduct.module.css";
+import { NavLink } from "react-router-dom";
 
-const Item = (props) => {
+const CardProduct = (props) => {
     return(
         <div className={s.elem}>
-            <div className={s.item}>
+            <NavLink to="/" className={s.item}>
                 <div className={s.img}>
                     <img src={props.img} alt="photo" />
                 </div>
@@ -12,9 +13,9 @@ const Item = (props) => {
                     <div className={s.title}>{props.title}</div>
                     <div className={s.detail}>{props.detail}</div>
                 </div>
-            </div>
+            </NavLink>
         </div>
     )
 }
 
-export default Item;
+export default CardProduct;

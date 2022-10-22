@@ -1,0 +1,132 @@
+.elem{
+    padding: 0 0.625rem;/*10*/
+}
+
+.img{
+    height: 11.25rem;/*180*/
+    width: 11.25rem;/*180*/
+    grid-row: 1/3;
+    grid-column: 1/2;
+}
+
+.img img{
+    height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 11.25rem auto;/*180*/
+    grid-template-rows: auto auto;
+    gap: 1.25rem 1.5625rem;/*20 25*/
+    padding: 0.9375rem;/*15*/
+    box-shadow: 0 0.125rem 0.625rem rgba(67, 96, 124, 0.25);/*2 10*/
+    border-radius: 0.3125rem;/*5*/
+}
+
+.name{
+    font-weight: 700;
+    font-size: 1.125rem;/*18*/
+    color: #43607C;
+    margin-bottom: 0.3125rem;/*5*/
+}
+
+.reviews{
+    font-size: 0.875rem;/*14*/
+    text-decoration-line: underline;
+    color: #A63A50;
+}
+
+.desc{
+    font-size: 0.875rem;/*14*/
+    color: #43607C;
+    margin-bottom: 0.9375rem;/*15*/
+}
+
+.mini,
+.big{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3125rem;/*5*/
+}
+
+.item{
+    background: #FFF2F2;
+    border-radius: 1.875rem;/*30*/
+    padding: 0.125rem 0.625rem;/*2 10*/
+    font-size: 0.875rem;/*14*/
+    line-height: 1.71428571428em;/*24/14*/
+    color: #A63A50;
+}
+
+.mini{
+    display: none;
+}
+
+@media (max-width: 100rem){/*1600*/
+}
+
+@media (max-width: 87.5rem){/*1400*/ 
+}
+
+@media (max-width: 75rem){/*1200*/
+}
+
+@media (max-width: 62rem){/*992*/
+}
+
+@media (max-width: 47.625rem){/*762*/
+}
+
+@media (max-width: 36rem){/*576*/
+    .wrap{
+        margin-left: 0.9375rem;/*15*/
+    }
+
+    .img{
+        grid-row: auto;
+        grid-column: auto;
+    }
+
+    .other{
+        grid-row: 2/3;
+        grid-column: 1/3;
+    }
+
+    .big{
+        display: none;
+    }
+
+    .mini{
+        display: flex;
+    }
+
+    .img{
+        height: 6.25rem;/*100*/
+        width: 6.25rem;/*100*/
+    }
+
+    .wrapper{
+        grid-template-columns: 6.25rem auto;/*100*/
+    }
+}
+
+@media (max-width: 31.25rem){/*500*/
+}
+
+@media (max-width: 28.125rem){/*450*/
+}
+
+@media (max-width: 23.4375rem){/*375*/
+    .big{
+        display: flex;
+    }
+
+    .mini{
+        display: none;
+    }
+}
+
+@media (max-width: 20rem){/*320*/
+}

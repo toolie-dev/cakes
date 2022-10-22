@@ -2,9 +2,14 @@
 
 }
 
-.subtitle_section{
+.subtitle_main{
     color: #43607C;
     max-width: 28.125rem;/*450*/
+}
+
+.subtitle_section{
+    color: #43607C;
+    text-align: center;
 }
 
 @media (max-width: 100rem){/*1600*/
@@ -20,7 +25,7 @@
 }
 
 @media (max-width: 47.625rem){/*762*/
-    .subtitle_section{
+    .subtitle_main{
         max-width: none;
     }
 }

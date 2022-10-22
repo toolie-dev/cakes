@@ -1,4 +1,3 @@
-//import s from "./PopupAuth.module.css";
 import Auth from "./Auth/Auth";
 import Login from "./Login/Login";
 import Registratin from "./Registration/Registration";

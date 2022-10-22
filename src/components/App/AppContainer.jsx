@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { connect } from "react-redux";
+import { compose } from "redux";
 import App from "./App";
 
 const AppContainer = (props) => {

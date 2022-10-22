@@ -1,5 +1,8 @@
 .btn{
-
+    padding: 0.3125rem 1.25rem;/*5 20*/
+    border-radius: 1.875rem;/*30*/
+    font-size: 0.875rem;/*14*/
+    line-height: 1.71428571428em;/*24/14*/
 }
 
 .btn_search{
@@ -13,11 +16,12 @@
 
 .btn_grey{
     background: #DCEBF8;
-    border-radius: 1.875rem;/*30*/
-    padding: 0.3125rem 1.25rem;/*5 20*/
-    font-size: 0.875rem;/*14*/
-    line-height: 1.71428571428em;/*24/14*/
     color: #43607C;
+}
+
+.btn_blue{
+    background: #43607C;
+    color: #fff;
 }
 
 @media (max-width: 100rem){/*1600*/

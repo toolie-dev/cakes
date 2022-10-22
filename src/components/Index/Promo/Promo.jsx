@@ -24,8 +24,8 @@ const Promo = (props) => {
                 <div className={s.wrapper}>
                     <div className={s.wrap}>
                         <div className={s.info}>
-                            <h1 className="title title_section">Пошукаємо щось смачненького?</h1>
-                            <h2 className="subtitle subtitle_section">Ми об’єднали кондитерів з різних міст, щоб необхідні смаколики можна було замовити ще легше</h2>
+                            <h1 className="title title_main">Пошукаємо щось смачненького?</h1>
+                            <h2 className="subtitle subtitle_main">Ми об’єднали кондитерів з різних міст, щоб необхідні смаколики можна було замовити ще легше</h2>
                         </div>
                         <div className={s.search}>
                             <PromoForm />

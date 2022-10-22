@@ -1,0 +1,38 @@
+.section{
+    background: #DCEBF8;
+}
+
+.wrapper{
+    padding: 3.75rem 0;/*60*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.25rem;/*20*/
+}
+
+@media (max-width: 100rem){/*1600*/
+}
+
+@media (max-width: 87.5rem){/*1400*/
+}
+
+@media (max-width: 75rem){/*1200*/
+}
+
+@media (max-width: 62rem){/*992*/
+}
+
+@media (max-width: 47.625rem){/*762*/
+    .wrapper{
+        padding: 3.125rem 0;/*50*/
+    }
+}
+
+@media (max-width: 36rem){/*576*/
+}
