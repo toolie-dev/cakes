@@ -1,5 +1,5 @@
 .elem{
-    padding: 0 0.625rem;/*10*/
+    padding: 0.625rem;/*10*/
 }
 
 .img{
@@ -19,7 +19,7 @@
     display: grid;
     grid-template-columns: 11.25rem auto;/*180*/
     grid-template-rows: auto auto;
-    gap: 1.25rem 1.5625rem;/*20 25*/
+    gap: 1.25rem;/*20*/
     padding: 0.9375rem;/*15*/
     box-shadow: 0 0.125rem 0.625rem rgba(67, 96, 124, 0.25);/*2 10*/
     border-radius: 0.3125rem;/*5*/

@@ -5,8 +5,8 @@ import s from "./SlickSlider.module.css";
 import Container from "../common/Container/Container";
 import { NavLink } from "react-router-dom";
 import Slider from "react-slick";
-import Arrows from "./Arrows/Arrows";
 import { useState } from "react";
+import Arrows from "./Arrows/Arrows";
 
 const ProductSlider = (props) => {
     const [slider, setSlider] = useState(null);
@@ -23,7 +23,6 @@ const ProductSlider = (props) => {
 
     if(!props.settings){
         settings = {
-            slidesToShow: 5,
             responsive: [
                 {
                     breakpoint: 1400,
@@ -55,6 +54,8 @@ const ProductSlider = (props) => {
         settings = props.settings;
     }
 
+    console.log(settings);
+
     return(
         <section className={s.product}>
             <Container>
@@ -73,8 +74,9 @@ const ProductSlider = (props) => {
                     </div>
                 </div>
                 <div className={s.slider}>
-                    <Slider settings = {{
-                            adaptiveHeight: true,
+                    <Slider {...{
+                            slidesToShow: 5,
+                            adaptiveHeight: false,
                             dots: false,
                             infinite: true,
                             speed: 500,
