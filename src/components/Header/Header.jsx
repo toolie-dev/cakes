@@ -1,4 +1,4 @@
-import logo from "../../assets/icons/logo.svg";
+import logo from "../../assets/icons/logo_blue.svg";
 import message_grey from "../../assets/icons/message_grey.svg";
 import user from "../../assets/icons/user_grey.svg";
 import location from "../../assets/icons/location.svg";

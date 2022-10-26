@@ -5,6 +5,7 @@
 .item{
     text-align: start;
     display: flex;
+    align-items: center;
     width: 100%;
     justify-content: space-between;
     margin-bottom: 0.625rem;/*10*/
@@ -50,15 +51,58 @@
 }
 
 .href{
+    text-align: start;
     font-size: 0.875rem;/*14*/
     text-decoration-line: underline;
     color: #43607C;
 }
 
 .auth{
-    width: 43.75rem;/*700*/
+    max-width: 43.75rem;/*700*/
     background-color: #fff;
     border-radius: 0.625rem;/*10*/
-    box-shadow: 0 0 0.3125rem /*5*/ #000;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);/*4 10*/
     padding: 2.5rem;/*40*/
+    width: calc(100% - (0.625rem * 2));/*10*2*/
+}
+
+@media (max-width: 100rem){/*1600*/
+}
+
+@media (max-width: 87.5rem){/*1400*/
+}
+
+@media (max-width: 75rem){/*1200*/
+}
+
+@media (max-width: 62rem){/*992*/
+}
+
+@media (max-width: 47.625rem){/*762*/
+}
+
+@media (max-width: 36rem){/*576*/
+    .auth{
+        padding: 0.9375rem;/*15*/
+    }
+
+    .item{
+        padding: 1.875rem 1.25rem;/*30 20*/
+    }
+
+    .main{
+        margin: 1.25rem 0;/*20*/
+    }
+
+    .info{
+        margin-left: 0.9375rem;/*15*/
+    }
+
+    .title{
+        font-size: 1.125rem;/*18*/
+    }
+
+    .subtitle{
+        font-size: 0.75rem;/*12*/
+    }
 }

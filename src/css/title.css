@@ -59,3 +59,13 @@
 
 @media (max-width: 36rem){/*576*/
 }
+
+@media (max-width: 20rem){/*320*/
+    .title{
+        font-size: 1.375rem;/*22*/
+    }
+
+    .title_auth{
+        font-size: 1.25rem;/*20*/
+    }
+}

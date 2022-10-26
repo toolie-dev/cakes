@@ -3,6 +3,7 @@
     border-radius: 1.875rem;/*30*/
     font-size: 0.875rem;/*14*/
     line-height: 1.71428571428em;/*24/14*/
+    white-space: nowrap;
 }
 
 .btn_search{
@@ -22,6 +23,25 @@
 .btn_blue{
     background: #43607C;
     color: #fff;
+}
+
+.btn_transparent{
+    color: #fff;
+}
+
+.btn_white{
+    color: red;
+    color: #011936;
+    background: #fff;
+}
+
+.btn_transparent,
+.btn_white{
+    border: 0.0625rem solid #FFFFFF;/*1*/
+    border-radius: 3.125rem;/*50*/
+    padding: 0.625rem 1.5625rem;/*10 25*/
+    display: flex;
+    justify-content: center;
 }
 
 @media (max-width: 100rem){/*1600*/

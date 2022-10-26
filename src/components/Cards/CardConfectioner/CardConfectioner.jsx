@@ -7,7 +7,7 @@ const Tags = (props) => {
         const bigWindowTags = props.tags.map((item, i) => {
             if(i < bigNumberTagsShow){
                 return(
-                    <button key={i++} className={s.item}>{item}</button>
+                    <button key={i++} className={s.btn}>{item}</button>
                 )
             }
         });
@@ -16,7 +16,7 @@ const Tags = (props) => {
         const miniWindowTags = props.tags.map((item, i) => {
             if(i < miniNumberTagsShow){
                 return(
-                    <button key={i++} className={s.item}>{item}</button>
+                    <button key={i++} className={s.btn}>{item}</button>
                 )
             }
         });
@@ -25,11 +25,11 @@ const Tags = (props) => {
             <div className={s.tags}>
                 <div className={s.big}>
                     {bigWindowTags}
-                    <div className={s.item}>{((props.tags.length - bigNumberTagsShow) > 0) && `+ ${props.tags.length - bigNumberTagsShow}`}</div>
+                    <div className={s.btn}>{((props.tags.length - bigNumberTagsShow) > 0) && `+ ${props.tags.length - bigNumberTagsShow}`}</div>
                 </div>
                 <div className={s.mini}>
                     {miniWindowTags}
-                    <div className={s.item}>{((props.tags.length - miniNumberTagsShow) > 0) && `+ ${props.tags.length - miniNumberTagsShow}`}</div>
+                    <div className={s.btn}>{((props.tags.length - miniNumberTagsShow) > 0) && `+ ${props.tags.length - miniNumberTagsShow}`}</div>
                 </div>
             </div>
         )
