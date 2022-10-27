@@ -1,0 +1,47 @@
+.form{
+    margin-top: 2.5rem;/*40*/
+}
+
+.title{
+    color: #011936;
+    margin-bottom: 1.25rem;/*20*/
+}
+
+.wrap{
+    display: flex;
+    gap: 0 1.875rem;/*30*/
+}
+
+.elem{
+    display: flex;
+    gap: 0 0.625rem;/*10*/
+}
+
+.input{
+    border: 0.0625rem solid #84A6C2;/*1*/
+    border-radius: 0.3125rem;/*5*/
+    height: 3.125rem;/*50*/
+    width: 2.5rem;/*40*/
+}
+
+.wrapper{
+    margin-bottom: 2.5rem;/*40*/
+}
+
+.btn{
+    font-size: 0.875rem;/*14*/
+    text-decoration-line: underline;
+    color: #84A6C2;
+    margin-bottom: 0.625rem;/*10*/
+}
+
+.error{
+    margin-top: 0.625rem;/*10*/
+    color: red;
+}
+
+.input{
+    text-align: center;
+    font-size: 1.25rem;/*20*/
+    font-weight: 600;
+}

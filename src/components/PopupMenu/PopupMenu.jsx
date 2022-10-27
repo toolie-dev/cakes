@@ -26,7 +26,7 @@ const PopupMenu = (props) => {
         <Canvas isShowHeader={true} isShow={props.isShow} timeout={1000} onClickCanvas={props.onClickCanvas}>
             <section className={s.menu}>
                 {props.isAuth || <WithoutLogin setTypePopup={props.setTypePopup} />}
-                {(props.isAuth && props.typeUser === "user") && <UsersMenu />}
+                {(props.isAuth && props.typeUser === "buyer") && <UsersMenu />}
                 {(props.isAuth && props.typeUser === "confectioner") && <ConfectionersMenu />}
             </section>
         </Canvas>

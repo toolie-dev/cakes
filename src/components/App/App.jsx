@@ -17,7 +17,7 @@ const App = (props) => {
             <Footer />
 
             <PopupMenuContainer isShow={props.typePopup === "menu"} typePopup={props.typePopup} setTypePopup={props.setTypePopup} onClickCanvas={props.onClickCanvas} />
-            <PopupAuth isShow={props.typePopup === "auth" && props.typePopup === "login" && props.typePopup === "registration"}
+            <PopupAuth isShow={props.typePopup === "auth" && props.typePopup === "login" && props.typePopup === "login-code" && props.typePopup === "registration" && props.typePopup === "registration-code"}
             typePopup={props.typePopup} setTypePopup={props.setTypePopup} onClickCanvas={props.onClickCanvas} />
         </BrowserRouter>
     );

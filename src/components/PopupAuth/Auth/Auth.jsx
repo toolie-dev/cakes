@@ -10,7 +10,7 @@ const Auth = (props) => {
             <section className={s.auth}>
                 <HeaderAuth title="Реєстрація" setTypePopup={props.setTypePopup} />
                 <div className={s.main}>
-                    <button onClick={ () => { props.setTypePopup("registration") } } className={s.item}>
+                    <button onClick={ () => { props.setTypePopup("registration"); props.setTypeRegistration("buyer") } } className={s.item}>
                         <div className={s.wrapper}>
                             <div className="img img_75">
                                 <img src={cookie} alt="cookie" />
@@ -24,7 +24,7 @@ const Auth = (props) => {
                             <div className={s.btn}>&rsaquo;</div>
                         </div>
                     </button>
-                    <button onClick={ () => { props.setTypePopup("registration") } } className={s.item}>
+                    <button onClick={ () => { props.setTypePopup("registration"); props.setTypeRegistration("confectioner") } } className={s.item}>
                         <div className={s.wrapper}>
                             <div className="img img_75">
                                 <img src={cupcake} alt="cookie" />

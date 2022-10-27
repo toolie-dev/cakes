@@ -1,5 +1,3 @@
-import { useRef } from "react";
-
 const setCursorPosition = (pos, elem) => {
     elem.focus();
     
@@ -16,7 +14,7 @@ const setCursorPosition = (pos, elem) => {
 };
 
 const createMask = (elem, event) => {
-    let matrix = '+38-0__-___-__-__',
+    let matrix = '+38-(0__)-___-__-__',
         i = 0,
         def = matrix.replace(/\D/g, ''),
         val = elem.value.replace(/\D/g, '');
@@ -38,28 +36,4 @@ const createMask = (elem, event) => {
     }
 }
 
-const FormControls = ({meta, input, children, ...props}) => {
-    //const hasError = meta.touched && meta.error
-    //{hasError && <span>{meta.error}</span>}
-    return(
-        <div>
-            <div>
-                {children}
-            </div>
-            
-        </div>
-    )
-}
-
-export const Textarea = (props) => {
-    const {meta, input, children, ...restProps} = props;
-    return <FormControls {...props}><textarea {...input} {...restProps}></textarea></FormControls>
-}
-
-export const Input = ({field, form, ...restProps}) => {
-    const ref = useRef(null);
-    
-    return <FormControls><input {...restProps} {...field}
-    ref={ref} onInput={ (e) => { createMask(ref.current, e) } } onFocus={ (e) => { createMask(ref.current, e) } } onBlur={ (e) => { createMask(ref.current, e) } }
-    /></FormControls>
-}
+export default createMask;

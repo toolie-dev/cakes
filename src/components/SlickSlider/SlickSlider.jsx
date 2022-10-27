@@ -53,9 +53,7 @@ const ProductSlider = (props) => {
     }else{
         settings = props.settings;
     }
-
-    console.log(settings);
-
+    
     return(
         <section className={s.product}>
             <Container>

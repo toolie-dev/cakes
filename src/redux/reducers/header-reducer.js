@@ -3,7 +3,7 @@
 
 const initialState = {
     isAuth: false,
-    typeUser: null//null user confectioner
+    typeUser: null//null buyer confectioner
 }
 
 const authReducer = (state = initialState, action) => {

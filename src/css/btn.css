@@ -1,4 +1,5 @@
 .btn{
+    display: block;
     padding: 0.3125rem 1.25rem;/*5 20*/
     border-radius: 1.875rem;/*30*/
     font-size: 0.875rem;/*14*/
@@ -42,6 +43,20 @@
     padding: 0.625rem 1.5625rem;/*10 25*/
     display: flex;
     justify-content: center;
+}
+
+.btn_auth_mini{
+    color: #5E2D07;
+    padding: 0.625rem 1.25rem;/*10 20*/
+    background: #FDAD6D;
+    border-radius: 3.125rem;/*50*/
+}
+
+.btn_auth_big{
+    color: #5E2D07;
+    padding: 0.625rem 4.6875rem;/*10 75*/
+    background: #FDAD6D;
+    border-radius: 3.125rem;/*50*/
 }
 
 @media (max-width: 100rem){/*1600*/

@@ -1,6 +1,13 @@
-export const telephoneNumber = value => {
-    console.log(value.length);
-    if(value && value.length != value) return `Wrong numbe`;
-    
-    return null
+import {phone} from "phone";
+
+export const phoneValidator = value => {
+    if(phone(value, {country: 'UA'}).isValid != true){
+        return "Неправильний номер телефону";
+    }
+}
+
+export const numberValidator = value => {
+    if(value && !/\D/.test(value)) return true;
+
+    return false;
 }
