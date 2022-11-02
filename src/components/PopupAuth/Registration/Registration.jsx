@@ -1,18 +1,18 @@
 import s from "./Registration.module.css"
-import Canvas from "../../common/Canvas/Canvas";
+import CanvasContainer from "../../common/Canvas/CanvasContainer";
 import FooterAuth from "../FooterAuth/FooterAuth";
-import HeaderAuth from "../HeaderAuth/HeaderAuth";
-import RegistrationForm from "./RegistrationForm/RegistrationForm";
+import RegistrationFormContainer from "./RegistrationForm/RegistrationFormContainer";
+import HeaderAuthContainer from "../HeaderAuth/HeaderAuthContainer";
 
 const Registratin = (props) => {
     return(
-        <Canvas isShow={props.isShow} timeout={1000} onClickCanvas={props.onClickCanvas}>
+        <CanvasContainer isShow={props.isShow}>
             <section className={s.auth}>
-                <HeaderAuth title="Реєстрація" setTypePopup={props.setTypePopup} />
-                <RegistrationForm setTypePopup={props.setTypePopup} typeRegistration={props.typeRegistration} />
+                <HeaderAuthContainer title="Реєстрація" />
+                <RegistrationFormContainer typeRegistration={props.typeRegistration} />
                 <FooterAuth isRegistration={true} onClick={ () => { props.setTypePopup("login") } } />
             </section>
-        </Canvas>
+        </CanvasContainer>
     )
 }
 

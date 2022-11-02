@@ -7,6 +7,9 @@ import { NavLink } from "react-router-dom";
 import Slider from "react-slick";
 import { useState } from "react";
 import Arrows from "./Arrows/Arrows";
+import Img from "../common/Img/Img";
+import Title from "../common/Title/Title";
+import Btn from "../common/Btn/Btn";
 
 const ProductSlider = (props) => {
     const [slider, setSlider] = useState(null);
@@ -58,15 +61,17 @@ const ProductSlider = (props) => {
         <section className={s.product}>
             <Container>
                 <div className={s.wrapper}>
-                    <h1 className="title title_product">{props.title}</h1>
+                    <Title otherClass="slider">{props.title}</Title>
                     <div className={s.wrap}>
-                        <NavLink className="btn btn_grey">Переглянути всі</NavLink>
+                        <NavLink>
+                            <Btn backgroundColor="grey">Переглянути всі</Btn>
+                        </NavLink>
                         <div className={s.buttons}>
-                            <button onClick={ () => { prevSlide() } } className="img img_24">
-                                <img src={arrow_left} alt="arrow" />
+                            <button onClick={ () => { prevSlide() } }>
+                                <Img height={24} src={arrow_left} alt="arrow" />
                             </button>
-                            <button onClick={ () => { nextSlide() } } className="img img_24">
-                                <img src={arrow_right} alt="arrow" />
+                            <button onClick={ () => { nextSlide() } }>
+                                <Img height={24} src={arrow_right} alt="arrow" />
                             </button>
                         </div>
                     </div>

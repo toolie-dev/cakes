@@ -3,6 +3,7 @@ import s from "./LoginForm.module.css";
 import { useFormik } from 'formik';
 import { useRef } from "react";
 import createMask from "../../../../utils/mask/mask";
+import Btn from "../../../common/Btn/Btn";
 
 const validate = values => {
     const validators = {
@@ -47,18 +48,9 @@ const LoginForm = (props) => {
                 <h2 className={s.title}>Номер телефону</h2>
                 <h3 className={s.subtitle}>На вказаний номер вам прийде СМС-повідомлення з кодом</h3>
                 <div className={s.wrap}>
-                    <input
-                        className={s.input}
-                        ref={ref}
-                        onInput={ (e) => { createMask(ref.current, e) } }
-                        onFocus={ (e) => { createMask(ref.current, e) } }
-                        onBlur={ (e) => { createMask(ref.current, e) } }
-                        id="tel"
-                        name="tel"
-                        onChange={formik.handleChange}
-                        value={formik.values.tel}
-                    />
-                    <button className="btn btn_auth_mini" type="submit">Надіслати</button>
+                    <input className={s.input} ref={ref}  onInput={ (e) => { createMask(ref.current, e) } } onFocus={ (e) => { createMask(ref.current, e) } }
+                        onBlur={ (e) => { createMask(ref.current, e) } } id="tel" name="tel" onChange={formik.handleChange} value={formik.values.tel} />
+                    <Btn otherClass="auth" size="mini" type="submit" backgroundColor="yellowAuth">Надіслати</Btn>
                 </div>
                 {formik.errors.tel ? <div className={s.error}>{formik.errors.tel}</div> : null}
             </div>

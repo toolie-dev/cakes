@@ -32,8 +32,8 @@
 }
 
 .desc{
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 0.875rem;/*14*/
+    line-height: 1.42857142857em;/*20/14*/
     color: #43607C;
 }
 
@@ -57,7 +57,7 @@
 
 @media (max-width: 29.6875rem){/*475*/
     .elem{
-        padding: 0.125rem 50px;/*2 10*/
+        padding: 0.125rem 3.125rem;/*2 50*/
     }
 }
 

@@ -1,0 +1,155 @@
+.btn{
+    display: block;
+    text-align: center;
+    padding: 0.3125rem 1.25rem;/*5 20*/
+    border-radius: 1.875rem;/*30*/
+    font-size: 0.875rem;/*14*/
+    line-height: 1.71428571428em;/*24/14*/
+    white-space: nowrap;
+    transition: .5s background-color, .5s color;
+}
+
+.search{
+    background: #FDAD6D;
+    border-radius: 0 0.3125rem 0.3125rem 0;/*5*/
+    font-size: 1.125rem;/*18*/
+    color: #8E4A4E;
+    padding: 0.9375rem 1.875rem;/*15 30*/
+}
+
+.footer{
+    border: 0.0625rem solid #FFFFFF;/*1*/
+    border-radius: 3.125rem;/*50*/
+    padding: 0.625rem 1.5625rem;/*10 25*/
+}
+
+.auth{
+    border-radius: 3.125rem;/*50*/
+}
+
+.tag{
+    border-radius: 2.5rem;/*40*/
+    padding: 0.53125rem 1.25rem;/*8.5 20*/
+}
+
+.menuListMain{
+    border-radius: 2.25rem;/*36*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.625rem 0;/*10*/
+    font-weight: 700;
+}
+
+.menuList{
+    border-radius: 2.25rem;/*36*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.625rem 0;/*10*/
+}
+
+.auth.mini{
+    padding: 0.625rem 1.25rem;/*10 20*/
+}
+
+.auth.big{
+    padding: 0.625rem 4.6875rem;/*10 75*/
+}
+
+.allWidth{
+    width: 100%;
+}
+
+.red{
+    background-color: #A63A50;
+    color: #fff;
+}
+
+.yellow{
+    background-color: #FDAD6D;
+    color: #8E4A4E;
+}
+
+.yellow:hover{
+    background-color: #FE8A01;
+}
+
+.yellowAuth{
+    background-color: #FDAD6D;
+    color: #5E2D07;
+}
+
+.yellowAuth:hover{
+    background-color: #FE8A01;
+}
+
+.pink{
+    background-color: #FFF2F2;
+    color: #8E4A4E;
+}
+
+.pinkTransparent{
+    background-color: #FFF2F2;
+    color: #8E4A4E;
+}
+
+.grey{
+    background-color: #DCEBF8;
+    color: #43607C;
+}
+
+.grey:hover{
+    background-color: #BEDBF2;
+}
+
+.blue{
+    background-color: #43607C;
+    color: #fff;
+}
+
+.blue:hover{
+    background-color: #84A6C2;
+}
+
+.transparent{
+    color: #fff;
+}
+
+.transparent:hover{
+    color: #84A6C2;
+}
+
+.white{
+    background-color: #fff;
+    color: #011936;
+}
+
+.white:hover{
+    background-color: #DCEBF8;
+}
+
+@media (max-width: 100rem){/*1600*/
+}
+
+@media (max-width: 87.5rem){/*1400*/
+}
+
+@media (max-width: 75rem){/*1200*/
+}
+
+@media (max-width: 62rem){/*992*/
+}
+
+@media (max-width: 47.625rem){/*762*/
+    .search{
+        padding: 0.625rem 0.78125rem;/*10 12.5*/
+    }
+
+    .tag{
+        font-size: 0.875rem;/*14*/
+    }
+}
+
+@media (max-width: 36rem){/*576*/
+}

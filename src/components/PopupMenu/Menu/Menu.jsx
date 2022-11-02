@@ -4,18 +4,18 @@ import logout from "../../../assets/icons/logout.svg";
 import arrow from "../../../assets/icons/arrow/arrow_right.svg";
 import location from "../../../assets/icons/location.svg";
 
-import s from "./ConfectionersMenu.module.css";
+import s from "./Menu.module.css";
 import { NavLink } from "react-router-dom";
+import Img from "../../common/Img/Img";
+import classNames from "classnames";
 
-const ConfectionersMenu = (props) => {
+const Menu = (props) => {
     return(
         <>
             <div className={s.wrap}>
                 <div className={s.item}>
                     <button className={s.button}>
-                        <div className="img img_20">
-                            <img src={location} alt="location" />
-                        </div>
+                        <Img height={20} src={location} alt="location" />
                         <div className={s.text}>Вся Україна</div>
                     </button>
                 </div>
@@ -31,15 +31,11 @@ const ConfectionersMenu = (props) => {
                 <div className={s.item}>
                     <div className={s.list}>
                         <NavLink to="/user" className={s.user}>
-                            <div className="img img_20">
-                                <img src={user} alt="user" />
-                            </div>
+                            <Img height={20} src={user} alt="user" />
                             <div className={s.name}>Інна Пономаренко</div>
                         </NavLink>
-                        <button className={`${s.btn} ${s.btnBrown}`}>
-                            <div className="img img_20">
-                                <img src={message_brown} alt="user" />
-                            </div>
+                        <button className={classNames(s.btn, s.btnBrown)}>
+                            <Img height={20} src={message_brown} alt="user" />
                             <div className={s.text}>Чат</div>
                         </button>
                     </div>
@@ -54,15 +50,11 @@ const ConfectionersMenu = (props) => {
                     <div className={s.footer}>
                         <NavLink className={s.link} to="/">
                             <div className={s.text}>Кабінет кондитера</div>
-                            <div className="img img_15">
-                                <img src={arrow} alt="arrow" />
-                            </div>
+                            <Img height={15} src={arrow} alt="arrow" />
                         </NavLink>
                         <button className={s.btn}>
                             <div className={s.text}>Вийти</div>
-                            <div className="img img_15">
-                                <img src={logout} alt="logout" />
-                            </div>
+                            <Img height={15} src={logout} alt="logout" />
                         </button>
                     </div>
                 </div>
@@ -71,4 +63,4 @@ const ConfectionersMenu = (props) => {
     )
 }
 
-export default ConfectionersMenu;
+export default Menu;

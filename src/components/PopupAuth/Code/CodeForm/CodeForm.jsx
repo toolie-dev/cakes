@@ -1,6 +1,7 @@
 import s from "./CodeForm.module.css";
 import { useFormik } from 'formik';
 import { numberValidator } from "../../../../utils/validators/index";
+import Btn from "../../../common/Btn/Btn";
 
 const validateNumber = e => {
     if(e.target.value.length > 1){
@@ -55,63 +56,21 @@ const CodeForm = (props) => {
                 <h2 className={s.title}>Введіть код з повідомлення</h2>
                 <div className={s.wrap}>
                     <div className={s.elem}>
-                        <input
-                            onInput={validateNumber}
-                            className={s.input}
-                            id="number1"
-                            name="number1"
-                            onChange={formik.handleChange}
-                            value={formik.values.number1}
-                        />
-                        <input
-                            onInput={validateNumber}
-                            className={s.input}
-                            id="number2"
-                            name="number2"
-                            onChange={formik.handleChange}
-                            value={formik.values.number2}
-                        />
-                        <input
-                            onInput={validateNumber}
-                            className={s.input}
-                            id="number3"
-                            name="number3"
-                            onChange={formik.handleChange}
-                            value={formik.values.number3}
-                        />
+                        <input onInput={validateNumber} className={s.input} id="number1" name="number1" onChange={formik.handleChange} value={formik.values.number1} />
+                        <input onInput={validateNumber} className={s.input} id="number2" name="number2" onChange={formik.handleChange} value={formik.values.number2} />
+                        <input onInput={validateNumber} className={s.input} id="number3" name="number3" onChange={formik.handleChange} value={formik.values.number3} />
                     </div>
                     <div className={s.elem}>
-                        <input
-                            onInput={validateNumber}
-                            className={s.input}
-                            id="number4"
-                            name="number4"
-                            onChange={formik.handleChange}
-                            value={formik.values.number4}
-                        />
-                        <input
-                            onInput={validateNumber} 
-                            className={s.input}
-                            id="number5"
-                            name="number5"
-                            onChange={formik.handleChange}
-                            value={formik.values.number5}
-                        />
-                        <input
-                            onInput={validateNumber}
-                            className={s.input}
-                            id="number6"
-                            name="number6"
-                            onChange={formik.handleChange}
-                            value={formik.values.number6}
-                        />
+                        <input onInput={validateNumber} className={s.input} id="number4" name="number4" onChange={formik.handleChange} value={formik.values.number4} />
+                        <input onInput={validateNumber}  className={s.input} id="number5" name="number5" onChange={formik.handleChange} value={formik.values.number5} />
+                        <input onInput={validateNumber} className={s.input} id="number6" name="number6" onChange={formik.handleChange} value={formik.values.number6} />
                     </div>
                 </div>
                 {formik.errors.number ? <div className={s.error}>{formik.errors.number}</div> : null}
             </div>
             <div className={s.btns}>
                 <button className={s.btn}>Надіслати повторно</button>
-                <button className="btn btn_auth_big" type="submit">Надіслати</button>
+                <Btn otherClass="auth" size="big" type="submit" backgroundColor="yellowAuth">Надіслати</Btn>
             </div>
         </form>
     )

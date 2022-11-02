@@ -1,20 +1,16 @@
 import user_brown from "../../../assets/icons/user_brown.svg";
-import location from "../../../assets/icons/location.svg";
 
 import s from "./WithoutLogin.module.css";
 import { NavLink } from "react-router-dom";
+import Img from "../../common/Img/Img";
+import { ChooseCity } from "../../common/Btn/Btns/Btns";
 
 const WithoutLogin = (props) => {
     return(
         <>
             <div className={s.wrap}>
                 <div className={s.item}>
-                    <button className={s.button}>
-                        <div className="img img_20">
-                            <img src={location} alt="location" />
-                        </div>
-                        <div className={s.text}>Вся Україна</div>
-                    </button>
+                    <ChooseCity isAllWidth={true} text="Вся Україна" />
                 </div>
                 <div className={s.item}>
                     <nav className={s.list}>
@@ -25,9 +21,7 @@ const WithoutLogin = (props) => {
                 </div>
                 <div className={s.item}>
                     <button onClick={ () => { props.setTypePopup("auth") } } className={s.btn}>
-                        <div className="img img_20">
-                            <img src={user_brown} alt="user" />
-                        </div>
+                        <Img height={20} src={user_brown} alt="user" />
                         <div className={s.text}>Увійти</div>
                     </button>
                 </div>

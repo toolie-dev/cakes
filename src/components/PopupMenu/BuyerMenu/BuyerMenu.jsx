@@ -1,22 +1,19 @@
-import location from "../../../assets/icons/location.svg";
 import message_brown from "../../../assets/icons/message_brown.svg";
 import user from "../../../assets/icons/user_grey.svg";
 import logout from "../../../assets/icons/logout.svg";
 
-import s from "./UsersMenu.module.css";
+import s from "./BuyerMenu.module.css";
 import { NavLink } from "react-router-dom";
+import Img from "../../common/Img/Img";
+import classNames from "classnames";
+import { ChooseCity } from "../../common/Btn/Btns/Btns";
 
-const UsersMenu = (props) => {
+const BuyerMenu = (props) => {
     return(
         <>
             <div className={s.wrap}>
                 <div className={s.item}>
-                    <button className={s.button}>
-                        <div className="img img_20">
-                            <img src={location} alt="location" />
-                        </div>
-                        <div className={s.text}>Вся Україна</div>
-                    </button>
+                    <ChooseCity isAllWidth={true} text="Вся Україна" />
                 </div>
                 <div className={s.item}>
                     <nav className={s.list}>
@@ -30,16 +27,15 @@ const UsersMenu = (props) => {
                 <div className={s.item}>
                     <div className={s.list}>
                         <NavLink to="/user" className={s.user}>
-                            <div className="img img_20">
-                                <img src={user} alt="user" />
-                            </div>
+                            <Img height={20} src={user} alt="user" />
                             <div className={s.name}>Інна Пономаренко</div>
                         </NavLink>
-                        <button className={`${s.btn} ${s.btnBrown}`}>
-                            <div className="img img_20">
-                                <img src={message_brown} alt="user" />
+                        <button className={classNames(s.btn, s.brown)}>
+                            <div className={s.wrapper}>
+                                <Img height={20} src={message_brown} alt="user" />
+                                <div className={s.text}>Чат</div>
+                                <div className={s.number}>+2</div>
                             </div>
-                            <div className={s.text}>Чат</div>
                         </button>
                     </div>
                 </div>
@@ -50,11 +46,9 @@ const UsersMenu = (props) => {
                     </nav>
                 </div>
                 <div className={s.item}>
-                    <button className={s.btn}>
+                    <button className={classNames(s.btn, s.animated)}>
                         <div className={s.text}>Вийти</div>
-                        <div className="img img_15">
-                            <img src={logout} alt="logout" />
-                        </div>
+                        <Img height={15} src={logout} alt="logout" />
                     </button>
                 </div>
             </div>
@@ -62,4 +56,4 @@ const UsersMenu = (props) => {
     )
 }
 
-export default UsersMenu;
+export default BuyerMenu;

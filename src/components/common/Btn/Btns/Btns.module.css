@@ -1,0 +1,77 @@
+.isAllWidth{
+    width: 100%;
+}
+
+.loginUsingSocialNetwork{
+    display: flex;
+    background-color: #DCEBF8;
+    border-radius: 0.625rem;/*10*/
+    padding: 0.625rem 2.8125rem;/*10 45*/
+    align-items: center;
+    transition: .5s background-color;
+}
+
+.loginUsingSocialNetwork:hover{
+    background-color: #BEDBF2;
+}
+
+.loginUsingSocialNetwork .text{
+    color: #43607C;
+    margin-left: 0.9375rem;/*15*/
+}
+
+.сhooseCity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.625rem 1.5625rem;/*10 25*/
+    background: #FFF2F2;
+    border-radius: 2.25rem;/*36*/
+    color: #8E4A4E;
+}
+
+.сhooseCity .text{
+    margin-left: 0.9375rem;/*15*/
+    font-weight: 700;
+}
+
+@media (max-width: 100rem){/*1600*/
+}
+
+@media (max-width: 87.5rem){/*1400*/
+}
+
+@media (max-width: 75rem){/*1200*/
+}
+
+@media (max-width: 62rem){/*992*/
+}
+
+@media (max-width: 47.625rem){/*762*/
+}
+
+@media (max-width: 36rem){/*576*/
+    .hidden{
+        display: none;
+    }
+
+    .loginUsingSocialNetwork{
+        padding: 0.46875rem 1.5625rem;/*7.5 25*/
+    }
+    
+    .loginUsingSocialNetwork .text{
+        font-size: 0.875rem;/*14*/
+        margin-left: 0.625rem;/*10*/
+    }
+}
+
+@media (max-width: 23.4375rem){/*375*/
+    .loginUsingSocialNetwork{
+        padding: 0.46875rem 0.9375rem;/*7.5 15*/
+    }
+    
+    .loginUsingSocialNetwork .text{
+        font-size: 0.875rem;/*14*/
+        margin-left: 0.625rem;/*10*/
+    }
+}

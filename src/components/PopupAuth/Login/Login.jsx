@@ -1,19 +1,18 @@
 import s from "./Login.module.css";
 import FooterAuth from "../FooterAuth/FooterAuth";
-import HeaderAuth from "../HeaderAuth/HeaderAuth";
-import Canvas from "../../common/Canvas/Canvas";
-import LoginForm from "./LoginForm/LoginForm";
+import HeaderAuthContainer from "../HeaderAuth/HeaderAuthContainer";
+import CanvasContainer from "../../common/Canvas/CanvasContainer";
+import LoginFormContainer from "./LoginForm/LoginFormContainer";
 
-//Input
 const Login = (props) => {
     return(
-        <Canvas isShow={props.isShow} timeout={1000} onClickCanvas={props.onClickCanvas}>
+        <CanvasContainer isShow={props.isShow}>
             <section className={s.auth}>
-                <HeaderAuth title="Вхід" setTypePopup={props.setTypePopup} />
-                <LoginForm setTypePopup={props.setTypePopup} />
+                <HeaderAuthContainer title="Вхід" />
+                <LoginFormContainer />
                 <FooterAuth isRegistration={false} onClick={ () => { props.setTypePopup("auth") } } />
             </section>
-        </Canvas>
+        </CanvasContainer>
     )
 }
 

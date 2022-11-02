@@ -4,5 +4,5 @@
     border-radius: 0.625rem;/*10*/
     box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);/*4 10*/
     padding: 2.5rem;/*40*/
-    max-width: calc(100% - (0.625rem * 2));/*10*2*/
+    max-width: 100%;/*10*2*/
 }

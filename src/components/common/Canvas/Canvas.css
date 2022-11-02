@@ -10,6 +10,7 @@
     height: 100vh;
     background: rgba(67, 96, 124, 0.5);
     overflow: auto;
+    padding: 0 1.25rem;/*20*/
 }
 
 .showHeader{

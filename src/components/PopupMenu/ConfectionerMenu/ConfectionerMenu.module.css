@@ -7,33 +7,55 @@
     padding: 1.875rem 1.25rem;/*30 20*/
     display: flex;
     flex-direction: column;
-    gap: 40px 0;
+    gap: 2.5rem 0;/*40*/
+}
+
+.animated{
+    opacity: .75;
+    transition: .5s opacity;
+}
+
+.animated:hover{
+    opacity: 1;
 }
 
 .btn{
     border-radius: 2.25rem;/*36*/
     display: flex;
     justify-content: center;
-    width: 100%;
+    align-items: center;
     padding: 0.625rem 0;/*10*/
-    color: #84A6C2;
+    color: #43607C;
 }
 
-.btnRed{
-    background: #A63A50;
-    color: #fff;
+.allWidth{
+    width: 100%;
+}
+
+.wrapper{
+    display: flex;
+    position: relative;
+}
+
+.number{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(100%, -50%);
+    padding: 0.3125rem 0.625rem;/*5 10*/
+    border-radius: 2.625rem;/*42*/
     font-weight: 700;
+    font-size: 0.875rem;/*14*/
 }
 
-.btnTransparent{
-    background: #FFF2F2;
-    color: #8E4A4E;
-    font-weight: 700;
-}
-
-.btnBrown{
-    background: #FFE2CA;
+.brown{
+    background-color: #FFE2CA;
     color: #5E2D07;
+}
+
+.brown .number{
+    background-color: #FDAD6D;
+    color: #011936;
 }
 
 .text{
@@ -48,11 +70,22 @@
 }
 
 .href{
+    display: flex;
+    justify-content: center;
     color: #43607C;
     text-align: center;
     padding: 0.625rem;/*10*/
     border: 0.0625rem solid #C8E6FF;/*1*/
     border-radius: 2.5rem;/*40*/
+}
+
+.href .number{
+    background-color: #DCEBF8;
+    color: #43607C;
+}
+
+.info{
+    padding: 0 0.625rem;/*10*/
 }
 
 .nav{
@@ -74,6 +107,7 @@
 
 .footer{
     display: flex;
+    justify-content: space-around;
 }
 
 .link{

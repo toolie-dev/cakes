@@ -16,6 +16,11 @@ import Container from "../../common/Container/Container";
 import s from "./Promo.module.css";
 import SubspeciesCard from "../SubspeciesCard/SubspeciesCard";
 import PromoForm from "./PromoForm/PromoForm";
+import Img from "../../common/Img/Img";
+import Title from "../../common/Title/Title";
+import Subtitle from "../../common/Subtitle/Subtitle";
+import Btn from "../../common/Btn/Btn";
+import classNames from "classnames";
 
 const Promo = (props) => {
     return(
@@ -24,37 +29,35 @@ const Promo = (props) => {
                 <div className={s.wrapper}>
                     <div className={s.wrap}>
                         <div className={s.info}>
-                            <h1 className="title title_main">Пошукаємо щось смачненького?</h1>
-                            <h2 className="subtitle subtitle_main">Ми об’єднали кондитерів з різних міст, щоб необхідні смаколики можна було замовити ще легше</h2>
+                            <Title otherClass="main">Пошукаємо щось смачненького?</Title>
+                            <Subtitle otherClass="main">Ми об’єднали кондитерів з різних міст, щоб необхідні смаколики можна було замовити ще легше</Subtitle>
                         </div>
                         <div className={s.search}>
                             <PromoForm />
                             <div className={s.popular}>
-                                <button className={s.item}>На день народження</button>
-                                <button className={s.item}>З фруктами</button>
-                                <button className={s.item}>Патріотичні</button>
-                                <button className={s.item}>Для чоловіків</button>
-                                <button className={s.item}>Для весілля</button>
-                                <button className={s.item}>Без глютену</button>
-                                <button className={s.item}>Веганські</button>
-                                <button className={s.item}>Без цукру</button>
-                                <button className={s.item}>Для дівчат</button>
-                                <button className={s.item}>З квітами</button>
+                                <Btn otherClass="tag" backgroundColor="pink">На день народження</Btn>
+                                <Btn otherClass="tag" backgroundColor="pink">З фруктами</Btn>
+                                <Btn otherClass="tag" backgroundColor="pink">Патріотичні</Btn>
+                                <Btn otherClass="tag" backgroundColor="pink">Для чоловіків</Btn>
+                                <Btn otherClass="tag" backgroundColor="pink">Для весілля</Btn>
+                                <Btn otherClass="tag" backgroundColor="pink">Без глютену</Btn>
+                                <Btn otherClass="tag" backgroundColor="pink">Веганські</Btn>
+                                <Btn otherClass="tag" backgroundColor="pink">Без цукру</Btn>
+                                <Btn otherClass="tag" backgroundColor="pink">Для дівчат</Btn>
+                                <Btn otherClass="tag" backgroundColor="pink">З квітами</Btn>
                                 <button className={s.other}>
                                     <div className={s.text}>Інші варіанти</div>
-                                    <div className="img img_6">
-                                        <img src={arrowBottom} alt="arrow" />
-                                    </div>
+                                    <Img height={6} src={arrowBottom} alt="arrow" />
                                 </button>
                             </div>
                         </div>
                         <div className={s.slider}>
                             <div className={s.arrows}>
-                                <button className="img img_24">
-                                    <img src={arrowLeft} alt="arrow" />
+                                <button>
+                                    <Img height={24} src={arrowLeft} alt="arrow" />
                                 </button>
-                                <button className="img img_24">
-                                    <img src={arrowRight} alt="arrow" />
+                                <button>
+                                    <Img height={24} src={arrowRight} alt="arrow" />
                                 </button>
                             </div>
                             <div className={s.carrousel}>
@@ -73,7 +76,7 @@ const Promo = (props) => {
                         <div className={s.img}>
                             <img src={img_2} alt="img" />
                         </div>
-                        <div className={`${s.img} ${s.big}`}>
+                        <div className={classNames(s.img, s.big)}>
                             <img src={img_3} alt="img" />
                         </div>
                     </div>

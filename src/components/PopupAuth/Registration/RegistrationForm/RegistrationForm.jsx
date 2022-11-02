@@ -4,6 +4,7 @@ import { phoneValidator } from "../../../../utils/validators/index";
 import createMask from "../../../../utils/mask/mask";
 import { useRef } from "react";
 import {phone} from "phone";
+import Btn from "../../../common/Btn/Btn";
 
 const validate = values => {
     const validators = {
@@ -52,13 +53,7 @@ const RegistrationForm = (props) => {
              <div className={s.wrapper}>
                 <h2 className={s.title}>{props.typeRegistration === "buyer" ? "Ім’я та прізвище" : "Ім’я або назва компанії"}</h2>
                 <div className={s.wrap}>
-                    <input
-                        className={s.input}
-                        id="name"
-                        name="name"
-                        onChange={formik.handleChange}
-                        value={formik.values.name}
-                    />
+                    <input className={s.input} id="name" name="name" onChange={formik.handleChange} value={formik.values.name} />
                 </div>
                 {formik.errors.name ? <div className={s.error}>{formik.errors.name}</div> : null}
             </div>
@@ -66,18 +61,9 @@ const RegistrationForm = (props) => {
                 <h2 className={s.title}>Номер телефону</h2>
                 <h3 className={s.subtitle}>На вказаний номер вам прийде СМС-повідомлення з кодом</h3>
                 <div className={s.wrap}>
-                    <input
-                        className={s.input}
-                        ref={ref}
-                        onInput={ (e) => { createMask(ref.current, e) } }
-                        onFocus={ (e) => { createMask(ref.current, e) } }
-                        onBlur={ (e) => { createMask(ref.current, e) } }
-                        id="tel"
-                        name="tel"
-                        onChange={formik.handleChange}
-                        value={formik.values.tel}
-                    />
-                    <button className="btn btn_auth_mini" type="submit">Надіслати</button>
+                    <input className={s.input} ref={ref} onInput={ (e) => { createMask(ref.current, e) } } onFocus={ (e) => { createMask(ref.current, e) } }
+                        onBlur={ (e) => { createMask(ref.current, e) } } id="tel" name="tel" onChange={formik.handleChange} value={formik.values.tel} />
+                    <Btn otherClass="auth" size="mini" type="submit" backgroundColor="yellowAuth">Надіслати</Btn>
                 </div>
                 {formik.errors.tel ? <div className={s.error}>{formik.errors.tel}</div> : null}
             </div>

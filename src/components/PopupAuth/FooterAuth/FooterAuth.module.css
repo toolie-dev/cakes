@@ -9,20 +9,55 @@
     margin-bottom: 1.25rem;/*20*/
 }
 
-.btn{
-    display: flex;
-    background: #DCEBF8;
-    border-radius: 0.625rem;/*10*/
-    padding: 0.625rem 2.8125rem;/*10 45*/
-    align-items: center;
-}
-
-.text{
-    color: #43607C;
-    margin-left: 0.9375rem;/*15*/
-}
-
 .href{
-    text-decoration-line: underline;
     color: #84A6C2;
+    position: relative;
+}
+
+.href::after{
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: 0;
+    width: 100%;
+    height: 0.0625rem;/*1*/
+    background-color: #84A6C2;
+    opacity: 1;
+    transition: .5s opacity;
+}  
+
+.href:hover::after{
+    opacity: 0;
+}
+
+@media (max-width: 100rem){/*1600*/
+}
+
+@media (max-width: 87.5rem){/*1400*/
+}
+
+@media (max-width: 75rem){/*1200*/
+}
+
+@media (max-width: 62rem){/*992*/
+}
+
+@media (max-width: 47.625rem){/*762*/
+}
+
+@media (max-width: 36rem){/*576*/
+    .title{
+        margin-bottom: 0.625rem;/*10*/
+        font-size: 0.875rem;/*14*/
+    }
+
+    .href{
+        font-size: 0.875rem;/*14*/
+    }
+}
+
+@media (max-width: 23.4375rem){/*375*/
+    .href{
+        font-size: 0.75rem;/*12*/
+    }
 }

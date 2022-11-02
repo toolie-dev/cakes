@@ -1,7 +1,28 @@
 .menu{
     align-self: flex-start;
-    margin-top: calc((1.25rem * 2) + 2.5rem);/*(20 * 2) + 40*/
-    padding: 1.25rem;/*20*/
-    max-width: 20rem;/*320*/
+    margin-top: calc(3.125rem + 2.5rem);/*50 + 40*/
+    padding-top: 1.25rem;/*20*/
+    max-width: 25rem;/*400*/
     width: 100%;
+}
+
+@media (max-width: 100rem){/*1600*/
+}
+
+@media (max-width: 87.5rem){/*1400*/
+}
+
+@media (max-width: 75rem){/*1200*/
+}
+
+@media (max-width: 62rem){/*992*/
+    .menu{
+        max-width: 18.75rem;/*300*/
+    }
+}
+
+@media (max-width: 47.625rem){/*762*/
+}
+
+@media (max-width: 36rem){/*576*/
 }

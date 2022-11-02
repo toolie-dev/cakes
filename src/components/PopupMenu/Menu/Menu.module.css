@@ -22,7 +22,7 @@
     padding: 1.875rem 1.25rem;/*30 20*/
     display: flex;
     flex-direction: column;
-    gap: 40px 0;
+    gap: 2.5rem 0;/*40*/
 }
 
 .btn{
@@ -31,7 +31,19 @@
     justify-content: center;
     width: 100%;
     padding: 0.625rem 0;/*10*/
-    color: #84A6C2;
+    color: #43607C;
+    opacity: .75;
+    transition: .5s opacity;
+}
+
+.btn:hover{
+    opacity: 1;
+}
+
+.btnTransparent{
+    background: #FFF2F2;
+    color: #8E4A4E;
+    font-weight: 700;
 }
 
 .btnBrown{
@@ -66,4 +78,19 @@
 .name{
     margin-left: 0.9375rem;/*15*/
     color: #43607C;
+}
+
+.footer{
+    display: flex;
+}
+
+.link{
+    display: flex;
+    align-items: center;
+}
+
+.link .text{
+    font-size: 0.875rem;/*14*/
+    line-height: 1.28571428571em;/*18/14*/
+    color: #84A6C2;
 }
