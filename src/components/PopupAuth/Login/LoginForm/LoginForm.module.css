@@ -14,7 +14,7 @@
 .wrap{
     width: 100%;
     display: flex;
-    gap: 0 0.9375rem;/*15*/
+    gap: 0.625rem 0.9375rem;/*20 15*/
     margin-top: 0.625rem;/*10*/
 }
 
@@ -39,4 +39,41 @@
 .error{
     margin-top: 0.625rem;/*10*/
     color: red;
+}
+
+@media (max-width: 100rem){/*1600*/
+}
+
+@media (max-width: 87.5rem){/*1400*/
+}
+
+@media (max-width: 75rem){/*1200*/
+}
+
+@media (max-width: 62rem){/*992*/
+}
+
+@media (max-width: 47.625rem){/*762*/
+}
+
+@media (max-width: 36rem){/*576*/
+    .form{
+        margin: 1.25rem 0 3.125rem 0;/*20 50*/
+    }
+
+    .wrap{
+        flex-direction: column;
+    }
+
+    .wrapper{
+        margin-bottom: 1.25rem;
+    }
+
+    .title{
+        font-size: 0.875rem;/*14*/
+    }
+
+    .subtitle{
+        font-size: 0.75rem;/*12*/
+    }
 }

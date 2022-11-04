@@ -9,12 +9,12 @@
 
 .wrap{
     display: flex;
-    gap: 0 1.875rem;/*30*/
+    column-gap: 1.875rem;/*30*/
 }
 
 .elem{
     display: flex;
-    gap: 0 0.625rem;/*10*/
+    column-gap: 0.625rem;/*10*/
 }
 
 .input{
@@ -44,4 +44,41 @@
     text-align: center;
     font-size: 1.25rem;/*20*/
     font-weight: 600;
+}
+
+@media (max-width: 100rem){/*1600*/
+}
+
+@media (max-width: 87.5rem){/*1400*/
+}
+
+@media (max-width: 75rem){/*1200*/
+}
+
+@media (max-width: 62rem){/*992*/
+}
+
+@media (max-width: 47.625rem){/*762*/
+}
+
+@media (max-width: 36rem){/*576*/
+    .btns button[type=submit]{
+        width: 100%;
+    }
+
+    .wrap{
+        column-gap: 1.25rem;/*20*/
+    }
+
+    .elem{
+        column-gap: 0.3125rem;/*5*/
+    }
+}
+
+@media (max-width: 23.4375rem){/*375*/
+    .input{
+        height: 2.8125rem;/*45*/
+        width: 2.1875rem;/*35*/
+        font-size: 1.125rem;/*18*/
+    }
 }
