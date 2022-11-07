@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import location from "../../../../assets/icons/location.svg";
+import more from "../../../../assets/icons/more.svg";
 
 import Img from "../../Img/Img";
 import s from "./Btns.module.css";
@@ -20,4 +21,13 @@ export const ChooseCity = (props) => {
             <div className={s.text}>{props.text}</div>
         </button>
     );
+}
+
+export const MoreGoodies = (props) => {
+    return(
+        <button className={s.moreGoodies}>
+            <Img height={25} src={more} alt="more" />
+            <div className={s.text}>Більше смаколиків</div>
+        </button>
+    )
 }

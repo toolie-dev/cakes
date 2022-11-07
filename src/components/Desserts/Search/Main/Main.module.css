@@ -1,0 +1,37 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.25rem;/*20*/
+    margin-bottom: 1.875rem;/*30*/
+}
+
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5rem;/*40*/
+}
+
+@media (max-width: 100rem){/*1600*/ 
+    .wrapper{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 87.5rem){/*1400*/ 
+}
+
+@media (max-width: 75rem){/*1200*/
+}
+
+@media (max-width: 62rem){/*992*/
+}
+
+@media (max-width: 47.625rem){/*762*/
+    .wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 36rem){/*576*/
+}

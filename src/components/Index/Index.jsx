@@ -147,10 +147,10 @@ const listArticles = [
 ]
 
 const Index = (props) => {
-    const itemsProduct_1 = listProduct_1.map((item, i) => <CardProduct key={i++} {...item} />),
-        itemsProduct_2 = listProduct_2.map((item, i) => <CardProduct key={i++} {...item} />),
-        confectioners = listConfectioners.map((item, i) => <CardConfectioner key={i++} {...item} />),
-        articles = listArticles.map((item, i) => <CardArticle key={i++} {...item} />);
+    const itemsProduct_1 = listProduct_1.map((item, i) => <CardProduct key={i + 1} {...item} />),
+        itemsProduct_2 = listProduct_2.map((item, i) => <CardProduct key={i + 1} {...item} />),
+        confectioners = listConfectioners.map((item, i) => <CardConfectioner key={i + 1} {...item} />),
+        articles = listArticles.map((item, i) => <CardArticle key={i + 1} {...item} />);
     return(
         <main>
             <Promo />

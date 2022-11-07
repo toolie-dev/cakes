@@ -23,6 +23,11 @@
     
 }
 
+.search{
+    font-size: 1.5rem;/*24*/
+    line-height: 1.25em;/*30/24*/
+}
+
 @media (max-width: 100rem){/*1600*/
     .title{
         font-size: 2rem;/*32*/

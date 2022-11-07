@@ -1,5 +1,6 @@
 import cookie from "../../../assets/icons/cookie.svg";
 import cupcake from "../../../assets/icons/cupcake.svg";
+import arrow from "../../../assets/icons/arrow/arrow_right.svg";
 
 import s from "./Auth.module.css";
 import HeaderAuthContainer from "../HeaderAuth/HeaderAuthContainer";
@@ -21,7 +22,7 @@ const Auth = (props) => {
                             </div>
                         </div>
                         <div className={s.button}>
-                            <div className={s.btn}>&rsaquo;</div>
+                            <Img height={25} src={arrow} alt="arrow"  />
                         </div>
                     </button>
                     <button onClick={ () => { props.setTypePopup("registration"); props.setTypeRegistration("confectioner") } } className={s.item}>
@@ -33,7 +34,7 @@ const Auth = (props) => {
                             </div>
                         </div>
                         <div className={s.button}>
-                            <div className={s.btn}>&rsaquo;</div>
+                            <Img height={25} src={arrow} alt="arrow" />
                         </div>
                     </button>
                 </div>

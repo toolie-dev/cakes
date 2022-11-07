@@ -1,12 +1,14 @@
 import { applyMiddleware, combineReducers, compose, createStore } from "redux";
 import thunkMiddleware from "redux-thunk";
 import authReducer from "./reducers/auth-reducer";
+import dessertsReducer from "./reducers/desserts-reducer";
 import popupReducer from "./reducers/popup-reducer";
 
 
 let reducers = combineReducers({
     auth: authReducer,
-    popup: popupReducer
+    popup: popupReducer,
+    desserts: dessertsReducer
 });
 
 /*

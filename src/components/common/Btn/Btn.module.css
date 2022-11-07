@@ -10,11 +10,13 @@
 }
 
 .search{
-    background: #FDAD6D;
     border-radius: 0 0.3125rem 0.3125rem 0;/*5*/
     font-size: 1.125rem;/*18*/
-    color: #8E4A4E;
     padding: 0.9375rem 1.875rem;/*15 30*/
+}
+
+.search.mini{
+    line-height: 1.222em;/*22/18*/
 }
 
 .footer{

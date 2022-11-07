@@ -1,0 +1,31 @@
+.wrap{
+    display: flex;
+    column-gap: 0.625rem;
+    margin: 0 1.25rem;/*20*/
+}
+
+.item{
+    width: 3.125rem;/*50*/
+    height: 3.125rem;/*50*/
+    border: 0.0625rem solid #FFE2CA;/*1*/
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.125rem;/*18*/
+    color: #5E2D07;
+}
+
+.active{
+    background: #FDAD6D;
+    font-weight: 700;
+    color: #011936;
+}
+
+.dots{
+    display: flex;
+    align-items: flex-end;
+    padding: 0.3125rem 0;/*5*/
+    font-size: 1.125rem;/*18*/
+    color: #5E2D07;
+}

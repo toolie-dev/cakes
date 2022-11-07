@@ -1,0 +1,80 @@
+.aside{
+    grid-row: 2/4;
+}
+
+.wrapper{
+    margin-top: 1.875rem;/*30*/
+}
+
+.elem{
+    margin-bottom: 1.875rem;/*30*/
+}
+
+.elem:last-child{
+    margin-bottom: 0;
+}
+
+.title{
+    font-weight: 700;
+    font-size: 1.125rem;/*18*/
+    color: #011936;
+    margin-bottom: 0.9375rem;/*15*/
+}
+
+.input{
+    display: none;
+}
+
+.input:checked + .label .tick{
+    opacity: 1;
+}
+
+.square{
+    width: 1.40625rem;/*22.5*/
+    height: 1.40625rem;/*22.5*/
+    border: 0.1875rem #43607C solid;/*3*/
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tick{
+    opacity: 0;
+    transition: .5s opacity;
+}
+
+.wrap{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;/*8*/
+}
+
+.label{
+    display: flex;
+    align-items: center;
+    column-gap: 0.9375rem;/*15*/
+    padding: 0.25rem;/*4*/
+}
+
+@media (max-width: 100rem){/*1600*/ 
+}
+
+@media (max-width: 87.5rem){/*1400*/ 
+}
+
+@media (max-width: 75rem){/*1200*/
+}
+
+@media (max-width: 62rem){/*992*/
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 47.625rem){/*762*/
+}
+
+@media (max-width: 36rem){/*576*/
+}

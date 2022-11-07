@@ -35,6 +35,26 @@
     font-weight: 700;
 }
 
+.moreGoodies{
+    display: flex;
+    width: 100%;
+    border: 0.0625rem solid #84A6C2;/*1*/
+    border-radius: 3.125rem;/*50*/
+    justify-content: center;
+    align-items: center;
+    padding: 0.78125rem;/*12.5*/
+    transition: .5s background-color;
+}
+
+.moreGoodies:hover{
+    background-color: #DCEBF8;
+}
+
+.moreGoodies .text{
+    margin-left: 0.9375rem;/*15*/
+    color: #43607C;
+}
+
 @media (max-width: 100rem){/*1600*/
 }
 
