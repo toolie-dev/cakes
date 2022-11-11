@@ -16,29 +16,3 @@
 .showHeader{
     z-index: 0;
 }
-
-.canvas.entering{
-    animation: show-canvas 1s forwards;
-}
-
-.canvas.exiting{
-    animation: hide-canvas 1s forwards;
-}
-
-@keyframes show-canvas {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes hide-canvas {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}

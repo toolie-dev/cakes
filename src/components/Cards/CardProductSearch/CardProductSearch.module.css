@@ -56,6 +56,7 @@
     .img{
         height: 15.625rem;/*250*/
     }
+
     .wrap{
         padding: 0.625rem;/*10*/
     }
@@ -69,7 +70,43 @@
 }
 
 @media (max-width: 47.625rem){/*762*/
+    .img{
+        height: 12.5rem;/*200*/
+    }
+
+    .wrap{
+        padding: 0.625rem 0.3125rem;/*10 5*/
+    }
+
+    .title{
+        min-height: 5rem;/*80*/
+    }
 }
 
 @media (max-width: 36rem){/*576*/
+    .img{
+        height: 17.1875rem;/*275*/
+    }
+
+    .wrap{
+        padding: 0.625rem;/*10*/
+    }
+
+    .title{
+        min-height: 3.75rem;/*60*/
+    }
+}
+
+@media (max-width: 31.25rem){/*500*/
+    .img{
+        height: 15.625rem;/*250*/
+    }
+
+    .wrap{
+        padding: 0.625rem;/*10*/
+    }
+
+    .title{
+        min-height: 3.75rem;/*60*/
+    }
 }

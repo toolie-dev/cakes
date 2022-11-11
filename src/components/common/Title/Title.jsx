@@ -3,7 +3,7 @@ import classNames from "classnames";
 
 const Title = ({children, otherClass, ...restProps}) => {
     return(
-        <h1 className={classNames(s.title, s[otherClass])}>{children}</h1>
+        <h1 {...restProps} className={classNames(s.title, s[otherClass])}>{children}</h1>
     )
 }
 

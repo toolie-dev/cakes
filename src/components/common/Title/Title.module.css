@@ -50,6 +50,10 @@
     .title{
         font-size: 1.625rem;/*26*/
     }
+
+    .search{
+        text-align: center;
+    }
 }
 
 @media (max-width: 47.625rem){/*762*/
@@ -60,6 +64,11 @@
     .mani{
         font-size: 1.875rem;/*30*/
         max-width: none;
+    }
+
+    .search{
+        font-size: 1.25rem;/*20*/
+        color: #43607C;
     }
 }
 

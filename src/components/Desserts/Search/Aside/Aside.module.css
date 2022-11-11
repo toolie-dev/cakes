@@ -57,6 +57,19 @@
     padding: 0.25rem;/*4*/
 }
 
+.btn{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    column-gap: 0.3125rem;/*5*/
+    margin-top: 0.625rem;/*10*/
+}
+
+.info{
+    color: #43607C;
+}
+
 @media (max-width: 100rem){/*1600*/ 
 }
 
@@ -69,7 +82,20 @@
 @media (max-width: 62rem){/*992*/
     .wrapper{
         display: flex;
+        flex-direction: row-reverse;
         justify-content: space-between;
+    }
+
+    .elem{
+        margin-bottom: 0;
+    }
+
+    .btn{
+        display: flex;
+    }
+
+    .wrapper.exited{
+        display: none;
     }
 }
 
@@ -77,4 +103,23 @@
 }
 
 @media (max-width: 36rem){/*576*/
+    .text{
+        font-size: 0.875rem;/*14*/
+    }
+
+    .label{
+        column-gap: 0.625rem;/*10*/
+    }
+
+    .title{
+        margin-bottom: 0.625rem;/*10*/
+    }
+
+    .wrapper{
+        margin-top: 1.25rem;/*20*/
+    }
+
+    .btn{
+        margin-top: 0.3125rem;/*5*/
+    }
 }

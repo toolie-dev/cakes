@@ -37,4 +37,14 @@
 }
 
 @media (max-width: 36rem){/*576*/
+    .tags{
+        flex-wrap: nowrap;
+        margin: 0 -0.625rem;/*10*/
+        padding: 0 0.625rem;/*10*/
+        overflow: auto;
+    }
+
+    .tags::-webkit-scrollbar {
+        display: none;
+    }
 }
