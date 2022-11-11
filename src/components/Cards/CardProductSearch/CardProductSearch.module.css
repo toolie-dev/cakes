@@ -110,3 +110,38 @@
         min-height: 3.75rem;/*60*/
     }
 }
+
+@media (max-width: 26.5625rem){/*425*/
+    .img{
+        height: 12.5rem;/*200*/
+    }
+
+    .wrap{
+        padding: 0.625rem 0;/*10*/
+    }
+
+    .title{
+        font-size: 0.875rem;/*14*/
+        min-height: 3.4375rem;/*55*/
+    }
+
+    .detail{
+        font-size: 0.75rem;/*12*/
+    }
+}
+
+@media (max-width: 23.4375rem){/*375*/
+    .img{
+        height: 10.625rem;/*170*/
+    }
+
+    .title{
+        min-height: 4.375rem;/*70*/
+    }
+}
+
+@media (max-width: 20rem){/*320*/
+    .img{
+        height: 9.375rem;/*150*/
+    }
+}

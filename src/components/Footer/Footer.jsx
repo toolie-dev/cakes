@@ -20,9 +20,9 @@ const Footer = (props) => {
                     </div>
                     <div>
                     <nav className={s.nav}>
-                        <NavLink className={s.item}>Десерти</NavLink>
-                        <NavLink className={s.item}>Кращі кондитери</NavLink>
-                        <NavLink className={s.item}>Корисні статті</NavLink>
+                        <NavLink to="/desserts" className={s.item}>Десерти</NavLink>
+                        <NavLink to="" className={s.item}>Кращі кондитери</NavLink>
+                        <NavLink to="" className={s.item}>Корисні статті</NavLink>
                     </nav>
                     </div>
                     <div className={s.other}>

@@ -17,7 +17,7 @@ const BuyerMenu = (props) => {
                 </div>
                 <div className={s.item}>
                     <nav className={s.list}>
-                        <NavLink to="/" className={s.href} href="#">Десерти</NavLink>
+                        <NavLink to="/desserts" className={s.href} href="#">Десерти</NavLink>
                         <NavLink to="/" className={s.href} href="#">Кращі кондитери</NavLink>
                         <NavLink to="/" className={s.href} href="#">Корисні статті</NavLink>
                     </nav>

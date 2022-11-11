@@ -56,3 +56,20 @@
 
 @media (max-width: 36rem){/*576*/
 }
+
+@media (max-width: 26.5625rem){/*425*/
+    .item{
+        height: 2.1875rem;/*35*/
+        width: 2.1875rem;/*35*/
+        font-size: 0.875rem;/*14*/
+    }
+
+    .dots{
+        font-size: 0.75rem;/*12*/
+    }
+
+    .wrap{
+        margin: 0 0.3125rem;/*5*/
+        column-gap: 0.125rem;/*2*/
+    }
+}

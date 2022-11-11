@@ -70,6 +70,14 @@
     color: #43607C;
 }
 
+.arrow{
+    transition: .5s transform;
+}
+
+.active{
+    transform: rotate(180deg);
+}
+
 @media (max-width: 100rem){/*1600*/ 
 }
 

@@ -42,7 +42,7 @@
     border-radius: 3.125rem;/*50*/
     justify-content: center;
     align-items: center;
-    padding: 0.78125rem;/*12.5*/
+    padding: 0.78125rem 0;/*12.5*/
     transition: .5s background-color;
 }
 
@@ -82,6 +82,10 @@
     .loginUsingSocialNetwork .text{
         font-size: 0.875rem;/*14*/
         margin-left: 0.625rem;/*10*/
+    }
+
+    .moreGoodies{
+        padding: 0.625rem 0;/*10*/
     }
 }
 

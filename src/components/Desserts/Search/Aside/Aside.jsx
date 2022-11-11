@@ -22,7 +22,9 @@ const Aside = (props) => {
             <Title otherClass="search">Шукаєш щось особливе?</Title>
             <button onClick={ () => { setIsShow(!isShow) } } className={s.btn}>
                 <div className={s.info}>Більше фільтрів</div>
-                <Img height={24} src={arrow} alt="arrow" />
+                <span className={classNames(isShow && s.active, s.arrow)}>
+                    <Img height={24} src={arrow} alt="arrow" />
+                </span>
             </button>
             <Transition
             in={isShow}
