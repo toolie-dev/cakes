@@ -1,7 +1,7 @@
-import search from "../../../../assets/icons/search.svg";
+import search from "../../assets/icons/search.svg";
 
-import Btn from "../../../common/Btn/Btn";
-import Img from "../../../common/Img/Img";
+import Btn from "../common/Btn/Btn";
+import Img from "../common/Img/Img";
 import s from "./SearchForm.module.css";
 
 const SearchForm =(props) => {

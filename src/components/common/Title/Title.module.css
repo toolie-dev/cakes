@@ -23,6 +23,10 @@
     
 }
 
+.slider.mini{
+    font-size: 1.5rem;/*24*/
+}
+
 .search{
     font-size: 1.5rem;/*24*/
     line-height: 1.25em;/*30/24*/
@@ -43,6 +47,10 @@
 @media (max-width: 75rem){/*1200*/
     .title{
         font-size: 1.75rem;/*28*/
+    }
+
+    .slider.mini{
+        font-size: 1.125rem;/*18*/
     }
 }
 

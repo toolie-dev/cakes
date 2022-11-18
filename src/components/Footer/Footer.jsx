@@ -21,7 +21,7 @@ const Footer = (props) => {
                     <div>
                     <nav className={s.nav}>
                         <NavLink to="/desserts" className={s.item}>Десерти</NavLink>
-                        <NavLink to="" className={s.item}>Кращі кондитери</NavLink>
+                        <NavLink to="/confectioners" className={s.item}>Кращі кондитери</NavLink>
                         <NavLink to="" className={s.item}>Корисні статті</NavLink>
                     </nav>
                     </div>

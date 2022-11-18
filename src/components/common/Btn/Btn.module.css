@@ -31,7 +31,10 @@
 
 .tag{
     border-radius: 2.5rem;/*40*/
-    padding: 0.53125rem 1.25rem;/*8.5 20*/
+    padding: 0.625rem 1.25rem;/*8.5 20*/
+    display: flex;
+    column-gap: 0.625rem;
+    align-items: center;
 }
 
 .menuListMain{
@@ -89,6 +92,11 @@
 .pink{
     background-color: #FFF2F2;
     color: #8E4A4E;
+}
+
+.pink.active{
+    background-color: #A63A50;
+    color: #fff;
 }
 
 .pinkTransparent{
@@ -150,6 +158,10 @@
 
     .tag{
         font-size: 0.875rem;/*14*/
+    }
+
+    .img{
+        display: none;
     }
 }
 

@@ -1,33 +1,13 @@
-import { listConfectioners, listArticles } from "./data.js";
-
 import SlickSlider from "../SlickSlider/SlickSlider";
-import CardConfectioner from "../Cards/CardConfectioner/CardConfectioner";
 import CardArticle from "../Cards/CardArticle/CardArticles";
-import SearchContainer from "./Search/SearchContainer.jsx";
+import { listArticles, confectioners } from "./data";
+import SearchContainer from "./Search/SearchContainer";
 
-const Desserts = (props) => {
-    const confectioners = listConfectioners.map((item, i) => <CardConfectioner key={i + 1} {...item} />),
-        articles = listArticles.map((item, i) => <CardArticle key={i + 1} {...item} />);
+const Confectioners = (props) => {
+    const articles = listArticles.map((item, i) => <CardArticle key={i + 1} {...item} />);
     return(
         <main>
-            <SearchContainer />
-            <SlickSlider settings={{
-                slidesToShow: 3,
-                responsive: [
-                    {
-                        breakpoint: 1600,
-                        settings: {
-                            slidesToShow: 2,
-                        }
-                    },
-                    {
-                        breakpoint: 992,
-                        settings: {
-                            slidesToShow: 1,
-                        }
-                    }
-                ]
-            }} items={confectioners} title="Кращі кондитери" />
+            <SearchContainer confectioners={confectioners} />
             <SlickSlider settings={{
                 responsive: [
                     {
@@ -60,4 +40,4 @@ const Desserts = (props) => {
     )
 }
 
-export default Desserts;
+export default Confectioners;

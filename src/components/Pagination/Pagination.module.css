@@ -30,6 +30,13 @@
     color: #5E2D07;
 }
 
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5rem;/*40*/
+}
+
 @media (max-width: 100rem){/*1600*/
 }
 

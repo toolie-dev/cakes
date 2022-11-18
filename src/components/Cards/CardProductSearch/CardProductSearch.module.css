@@ -117,7 +117,7 @@
     }
 
     .wrap{
-        padding: 0.625rem 0;/*10*/
+        padding: 0.625rem 0.3125rem;/*10 5*/
     }
 
     .title{

@@ -16,7 +16,7 @@ export const LoginUsingSocialNetwork = (props) => {
 
 export const ChooseCity = (props) => {
     return(
-        <button className={classNames(s.сhooseCity, props.isAllWidth? s.isAllWidth: null, props.isHidden? s.hidden: null)}>
+        <button className={classNames(s.сhooseCity, props.isAllWidth && s.isAllWidth, props.isHidden && s.hidden, props.isTransparent && s.transparent)}>
             <Img height={20} src={location} alt="location" />
             <div className={s.text}>{props.text}</div>
         </button>

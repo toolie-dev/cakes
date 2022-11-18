@@ -25,6 +25,16 @@ main{
     animation-duration: 1s; /* don't forget to set a duration! */
 }
 
+#root{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper{
+    flex: 1 1;
+}
+
 @media (max-width: 100rem){/*1600*/
 }
 

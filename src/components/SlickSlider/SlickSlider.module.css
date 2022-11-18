@@ -40,6 +40,9 @@
 }
 
 @media (max-width: 47.625rem){/*762*/
+    .mini .wrapper{
+        display: none;
+    }
 }
 
 @media (max-width: 36rem){/*576*/

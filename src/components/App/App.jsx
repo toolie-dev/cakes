@@ -6,16 +6,20 @@ import PopupMenuContainer from '../PopupMenu/PopupMenuContainer';
 import Footer from '../Footer/Footer';
 import PopupAuthContainer from '../PopupAuth/PopupAuthContainer';
 import Desserts from '../Desserts/Desserts';
+import Confectioners from '../Confectioners/Confectioners';
 
 const App = (props) => {
     return (
         <BrowserRouter>
             <HeaderContainer />
-            <Routes>
-                <Route path="" element={ <Navigate to="/index" /> } />
-                <Route path="/index" element={<IndexContainer />} />
-                <Route path="/desserts" element={<Desserts />} />
-            </Routes>
+            <div className="wrapper">
+                <Routes>
+                    <Route path="" element={ <Navigate to="/index" /> } />
+                    <Route path="/index" element={<IndexContainer />} />
+                    <Route path="/desserts" element={<Desserts />} />
+                    <Route path="/confectioners" element={<Confectioners />} />
+                </Routes>
+            </div>
             <Footer />
 
             <PopupMenuContainer isShow={props.typePopup === "menu"} />

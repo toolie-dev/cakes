@@ -1,12 +1,10 @@
-import Container from "../../common/Container/Container";
 import s from "./Search.module.css";
-import { products } from "../data.js";
-import MainContainer from "./Main/MainContainer";
-import Btn from "../../common/Btn/Btn";
-import { ChooseCity } from "../../common/Btn/Btns/Btns";
-import AsideContainer from "./Aside/AsideContainer";
-import { useState } from "react";
+import Container from "../../common/Container/Container";
 import SearchForm from "../../SearchForm/SearchForm";
+import Btn from "../../common/Btn/Btn";
+import { useState } from "react";
+import MainContainer from "./Main/MainContainer";
+import { ChooseCity } from "../../common/Btn/Btns/Btns";
 
 const Search = (props) => {
     const [tags, setTags] = useState({
@@ -27,10 +25,8 @@ const Search = (props) => {
         <section className={s.search}>
             <Container>
                 <div className={s.wrapper}>
-                    <div className={s.header}>
-                        <SearchForm />
-                    </div>
-                    <div className={s.wrap}>
+                    <SearchForm />
+                    <div>
                         <div className={s.chooseCity}>
                             <ChooseCity isTransparent={true} isAllWidth={true} text="Вся Україна" />
                         </div>
@@ -42,13 +38,12 @@ const Search = (props) => {
                             <Btn onClick={ () => { onClick("cookies") } } otherClass="tag" isActive={tags.cookies} backgroundColor="pink">Печиво</Btn>
                             <Btn onClick={ () => { onClick("sweets") } } otherClass="tag" isActive={tags.sweets} backgroundColor="pink">Цукерки</Btn>
                         </div>
-                    </div> 
-                    <AsideContainer />
-                    <MainContainer products={products} />
+                    </div>
+                    <MainContainer confectioners={props.confectioners} />
                 </div>
             </Container>
         </section>
     )
 }
 
-export default Search
+export default Search;

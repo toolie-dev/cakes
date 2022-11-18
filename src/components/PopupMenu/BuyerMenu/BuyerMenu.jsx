@@ -17,9 +17,9 @@ const BuyerMenu = (props) => {
                 </div>
                 <div className={s.item}>
                     <nav className={s.list}>
-                        <NavLink to="/desserts" className={s.href} href="#">Десерти</NavLink>
-                        <NavLink to="/" className={s.href} href="#">Кращі кондитери</NavLink>
-                        <NavLink to="/" className={s.href} href="#">Корисні статті</NavLink>
+                        <NavLink to="/desserts" className={s.href}>Десерти</NavLink>
+                        <NavLink to="/confectioners" className={s.href}>Кращі кондитери</NavLink>
+                        <NavLink to="/" className={s.href}>Корисні статті</NavLink>
                     </nav>
                 </div>
             </div>
@@ -41,8 +41,8 @@ const BuyerMenu = (props) => {
                 </div>
                 <div className={s.item}>
                     <nav className={s.list}>
-                        <NavLink to="/" className={s.href} href="#">Мої заявки</NavLink>
-                        <NavLink to="/" className={s.href} href="#">Збережені шаблони</NavLink>
+                        <NavLink to="/" className={s.href}>Мої заявки</NavLink>
+                        <NavLink to="/" className={s.href}>Збережені шаблони</NavLink>
                     </nav>
                 </div>
                 <div className={s.item}>

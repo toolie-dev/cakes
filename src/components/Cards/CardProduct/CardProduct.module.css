@@ -49,6 +49,10 @@
     .title{
         min-height: 3.75rem;/*60*/
     }
+
+    .mini .img{
+        height: 17.1875rem;/*275*/
+    }
 }
 
 @media (max-width: 87.5rem){/*1400*/ 
@@ -58,12 +62,30 @@
     .img{
         height: 17.1275rem;/*275*/
     }
+
+    .mini .img{
+        height: 15.625rem;/*250*/
+    }
+
+    .mini .title{
+        min-height: 5rem;/*80*/
+    }
 }
 
 @media (max-width: 62rem){/*992*/
+    .mini .title{
+        min-height: 3.75rem;/*60*/
+    }
 }
 
 @media (max-width: 47.625rem){/*762*/
+    .mini .title{
+        min-height: 5rem;/*80*/
+    }
+
+    .mini .img{
+        height: 12.5rem;/*200*/
+    }
 }
 
 @media (max-width: 36rem){/*576*/
@@ -74,10 +96,22 @@
     .wrap{
         padding: 0.625rem 0.3125rem;/*10 5*/
     }
+
+    .mini .img{
+        height: 10.9375rem;/*175*/
+    }
 }
 
 @media (max-width: 31.25rem){/*500*/
     .img{
+        height: 15.625rem;/*250*/
+    }
+
+    .mini .title{
+        min-height: 4.375rem;/*70*/
+    }
+
+    .mini .img{
         height: 15.625rem;/*250*/
     }
 }
@@ -86,17 +120,25 @@
     .img{
         height: 12.5rem;/*200*/
     }
+
+    .mini .img{
+        height: 12.5rem;/*200*/
+    }
 }
 
 @media (max-width: 23.4375rem){/*375*/
     .img{
         height: 10.9375rem;/*175*/
     }
+
+    .mini .img{
+        height: 10.9375rem;/*175*/
+    }
 }
 
 @media (max-width: 20rem){/*320*/
     .img{
-        height: 20rem;/*320*/
+        height: 18.75rem;/*300*/
     }
 
     .title{
@@ -105,5 +147,17 @@
 
     .wrap{
         padding: 0.9375rem;/*15*/
+    }
+
+    .mini .title{
+        font-size: 1rem;/*16*/
+    }
+
+    .mini .wrap{
+        padding: 0.9375rem;/*15*/
+    }
+
+    .mini .img{
+        height: 18.75rem;/*300*/
     }
 }

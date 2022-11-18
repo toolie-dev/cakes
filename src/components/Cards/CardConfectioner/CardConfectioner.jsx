@@ -1,61 +1,34 @@
 import s from "./CardConfectioner.module.css";
 import { NavLink } from "react-router-dom";
+import classNames from "classnames";
 
 const Tags = (props) => {
-    if(props.tags){
-        const bigNumberTagsShow = 2;
-        const bigWindowTags = props.tags.map((item, i) => {
-            if(i < bigNumberTagsShow){
-                return(
-                    <button key={i + 1} className={s.btn}>{item}</button>
-                )
-            }
-        });
-
-        const miniNumberTagsShow = 3;
-        const miniWindowTags = props.tags.map((item, i) => {
-            if(i < miniNumberTagsShow){
-                return(
-                    <button key={i + 1} className={s.btn}>{item}</button>
-                )
-            }
-        });
-
-        return(
-            <div className={s.tags}>
-                <div className={s.big}>
-                    {bigWindowTags}
-                    <div className={s.btn}>{((props.tags.length - bigNumberTagsShow) > 0) && `+ ${props.tags.length - bigNumberTagsShow}`}</div>
-                </div>
-                <div className={s.mini}>
-                    {miniWindowTags}
-                    <div className={s.btn}>{((props.tags.length - miniNumberTagsShow) > 0) && `+ ${props.tags.length - miniNumberTagsShow}`}</div>
-                </div>
-            </div>
-        )
-    }
-}
-
-const CardConfectioner = (props) => {
     return(
-        <div className={s.elem}>
-            <NavLink to="/" className={s.item}>
-                <div className={s.wrapper}>
-                    <div className={s.img}>
-                        <img src={props.img} alt="photo" />
-                    </div>
-                    <div className={s.info}>
-                        <div className={s.name}>{props.name}</div>
-                        <div className={s.reviews}>{props.reviews} відгуки</div>
-                    </div>
-                    <div className={s.other}>
-                        <div className={s.desc}>{props.desc}</div>
-                        <Tags tags={props.tags} />
-                    </div>
-                </div>
-            </NavLink>
+        <div className={s.tags}>
+            {props.tags[0] && <div className={s.btn}>{props.tags[0]}</div>}
+            {props.tags[1] && <div className={s.btn}>{props.tags[1]}</div>}
+            {(props.tags.length - 2) > 0 && <div className={s.btn}>+{props.tags.length - 2}</div>}
         </div>
     )
+}
+
+const CardConfectioner = ({isNeedWrapper = true, ...props}) => {
+    const CardConfectioner = (
+        <NavLink to="/" className={classNames(s.item, props.isMini && s.mini)}>
+            <div className={s.wrapper}>
+                <div className={s.img}>
+                    <img src={props.img} alt="photo" />
+                </div>
+                <div className={s.name}>{props.name}</div>
+                <div className={s.reviews}>{props.reviews} {props.reviews % 2 === 1? "відгуків": "відгуки"}</div>
+                <div className={s.desc}>{props.desc}</div>
+                <Tags tags={props.tags} />
+            </div>
+        </NavLink>
+    )
+
+    if(isNeedWrapper)return <div className={s.elem}>{CardConfectioner}</div>
+    else return CardConfectioner
 }
 
 export default CardConfectioner;
