@@ -9,7 +9,7 @@
 .img{
     height: 11.25rem;/*180*/
     width: 11.25rem;/*180*/
-    grid-row: 1/5;
+    grid-row: 1/6;
     grid-column: 1/2;
     border-radius: 0.3125rem;/*5*/
 }
@@ -30,8 +30,8 @@
 .wrapper{
     display: grid;
     grid-template-columns: 11.25rem auto;/*180*/
-    grid-template-rows: auto auto auto auto auto;
-    column-gap: 1.25rem;/*20*/
+    grid-template-rows: auto auto auto auto;
+    gap: 1.25rem 1.5625rem;/*20 25*/
     padding: 0.9375rem;/*15*/
     box-shadow: 0 0.125rem 0.625rem rgba(67, 96, 124, 0.25);/*2 10*/
     border-radius: 0.3125rem;/*5*/
@@ -49,7 +49,7 @@
     font-weight: 700;
     font-size: 1.125rem;/*18*/
     color: #43607C;
-    margin-bottom: 0.3125rem;/*5*/
+    margin-bottom: -0.9375rem;/*-15*/
 }
 
 .mini .name{
@@ -62,14 +62,9 @@
     color: #A63A50;
 }
 
-.mini .reviews{
-    margin-bottom: 1.25rem;/*20*/
-}
-
 .desc{
     font-size: 0.875rem;/*14*/
     color: #43607C;
-    margin-bottom: 0.9375rem;/*15*/
 }
 
 .mini .desc{
@@ -88,7 +83,6 @@
 .tags{
     display: flex;
     gap: 0.3125rem;/*5*/
-    margin: 0 auto;
     flex-wrap: wrap;
 }
 
@@ -163,7 +157,6 @@
 
     .mini .tags{
         justify-content: flex-start;
-        width: 100%;
     }
 }
 
@@ -172,14 +165,18 @@
         margin-left: 0.9375rem;/*15*/
     }
 
-    .img{
-        grid-row: 1/4;
-        height: 6.25rem;/*100*/
-        width: 6.25rem;/*100*/
+    .wrapper{
+        grid-template-columns: 7.8125rem auto;/*125*/
+        gap: 0.625rem;/*10*/
     }
 
-    .wrapper{
-        /*grid-template-columns: 6.25rem auto;/*100*/
+    .name{
+        margin: 0;
+    }
+
+    .img{
+        height: 7.8125rem;/*125*/
+        width: 7.8125rem;/*125*/
     }
 
     .mini .wrapper{
@@ -212,10 +209,40 @@
     }
 }
 
-@media (max-width: 23.4375rem){/*576*/
+@media (max-width: 26.5625rem){/*425*/
+    .name{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .wrapper{
+        grid-template-columns: 6.25rem auto;/*100*/
+        gap: 0.625rem;/*10*/
+    }
+
+    .img{
+        height: 6.25rem;/*100*/
+        width: 6.25rem;/*100*/
+        grid-row: 2/5;
+    }
+
+    .tags{
+        grid-column: 1/3;
+    }
+}
+
+@media (max-width: 23.4375rem){/*375*/
+    .reviews{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    .img{
+        grid-row: auto;
+    }
+
     .mini .img{
-        height: 175px;
-        width: 175px;
+        height: 10.9375rem;/*175*/
+        width: 10.9375rem;/*175*/
     }
 
     .mini .wrapper{
@@ -229,5 +256,9 @@
 
     .mini .tags{
         justify-content: center;
+    }
+
+    .mini .name{
+        text-align: center;
     }
 }
