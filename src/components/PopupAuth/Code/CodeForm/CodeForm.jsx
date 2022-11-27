@@ -66,7 +66,7 @@ const CodeForm = (props) => {
                         <input onInput={validateNumber} className={s.input} id="number6" name="number6" onChange={formik.handleChange} value={formik.values.number6} />
                     </div>
                 </div>
-                {formik.errors.number ? <div className={s.error}>{formik.errors.number}</div> : null}
+                {formik.errors.number && <div className={s.error}>{formik.errors.number}</div>}
             </div>
             <div className={s.btns}>
                 <button className={s.btn}>Надіслати повторно</button>

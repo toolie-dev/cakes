@@ -1,33 +1,10 @@
 import s from "./RegistrationForm.module.css";
 import { useFormik } from 'formik';
-import { phoneValidator } from "../../../../utils/validators/index";
+import validate, { phoneValidator } from "../../../../utils/validators/index";
 import createMask from "../../../../utils/mask/mask";
 import { useRef } from "react";
 import {phone} from "phone";
 import Btn from "../../../common/Btn/Btn";
-
-const validate = values => {
-    const validators = {
-        tel: phoneValidator
-    }
-
-    let errors= {};
-
-    for (const key in values) {
-        if(validators[key]){
-            const error = validators[key](values[key]);
-
-            if(typeof(error) === "string"){
-                errors = {
-                    ...errors,
-                    [key]: error 
-                }
-            }
-        }
-    }
-
-    return errors;
-};
 
 const RegistrationForm = (props) => {
     const ref = useRef(null);
@@ -37,7 +14,11 @@ const RegistrationForm = (props) => {
             tel: "+38-(0",
             name: ""
         },
-        validate,
+        validate: values => {
+            return validate(values, {
+                tel: phoneValidator
+            });
+        },
         onSubmit: values => {
             props.setTypePopup("registration-code");
             console.log(JSON.stringify({
@@ -65,7 +46,7 @@ const RegistrationForm = (props) => {
                         onBlur={ (e) => { createMask(ref.current, e) } } id="tel" name="tel" onChange={formik.handleChange} value={formik.values.tel} />
                     <Btn otherClass="auth" size="mini" type="submit" backgroundColor="yellowAuth">Надіслати</Btn>
                 </div>
-                {formik.errors.tel ? <div className={s.error}>{formik.errors.tel}</div> : null}
+                {formik.errors.tel && <div className={s.error}>{formik.errors.tel}</div>}
             </div>
         </form>
     )

@@ -42,6 +42,10 @@
     .title{
         font-size: 1.875rem;/*30*/
     }
+
+    .search{
+        font-size: 1.375rem;/*22*/
+    }
 }
 
 @media (max-width: 75rem){/*1200*/
@@ -69,7 +73,7 @@
         font-size: 1.5rem;/*24*/
     }
 
-    .mani{
+    .main{
         font-size: 1.875rem;/*30*/
         max-width: none;
     }

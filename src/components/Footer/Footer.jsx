@@ -15,14 +15,16 @@ const Footer = (props) => {
             <Container>
                 <div className={s.wrapper}>
                     <div className={s.wrap}>
-                        <Img height={40} src={logo} alt="logo" />
+                        <NavLink to="/index">
+                            <Img height={40} src={logo} alt="logo" />
+                        </NavLink>
                         <ChooseCity text="Вся Україна" />
                     </div>
                     <div>
                     <nav className={s.nav}>
                         <NavLink to="/desserts" className={s.item}>Десерти</NavLink>
                         <NavLink to="/confectioners" className={s.item}>Кращі кондитери</NavLink>
-                        <NavLink to="" className={s.item}>Корисні статті</NavLink>
+                        <NavLink to="/articles" className={s.item}>Корисні статті</NavLink>
                     </nav>
                     </div>
                     <div className={s.other}>

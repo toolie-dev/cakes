@@ -7,6 +7,7 @@ import Footer from '../Footer/Footer';
 import PopupAuthContainer from '../PopupAuth/PopupAuthContainer';
 import Desserts from '../Desserts/Desserts';
 import Confectioners from '../Confectioners/Confectioners';
+import ArticlesContainer from '../Articles/ArticlesContainer';
 
 const App = (props) => {
     return (
@@ -18,6 +19,7 @@ const App = (props) => {
                     <Route path="/index" element={<IndexContainer />} />
                     <Route path="/desserts" element={<Desserts />} />
                     <Route path="/confectioners" element={<Confectioners />} />
+                    <Route path="/articles" element={<ArticlesContainer />} />
                 </Routes>
             </div>
             <Footer />

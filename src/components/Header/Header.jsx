@@ -32,7 +32,7 @@ const Header = (props) => {
                     <nav className={s.nav}>
                         <NavLink to="/desserts" className={({ isActive }) => isActive ? classNames(s.item, s.active) : s.item}>Десерти</NavLink>
                         <NavLink to="/confectioners" className={({ isActive }) => isActive ? classNames(s.item, s.active) : s.item}>Кращі кондитери</NavLink>
-                        <NavLink to="/test" className={({ isActive }) => isActive ? classNames(s.item, s.active) : s.item}>Корисні статті</NavLink>
+                        <NavLink to="/articles" className={({ isActive }) => isActive ? classNames(s.item, s.active) : s.item}>Корисні статті</NavLink>
                     </nav>
                     <div className={s.info}>
                         {props.isAuth?

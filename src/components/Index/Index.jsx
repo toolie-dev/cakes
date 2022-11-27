@@ -26,7 +26,7 @@ import Promo from "./Promo/Promo";
 import SlickSlider from "../SlickSlider/SlickSlider";
 import CardProduct from "../Cards/CardProduct/CardProduct.jsx";
 import CardConfectioner from "../Cards/CardConfectioner/CardConfectioner";
-import CardArticle from "../Cards/CardArticle/CardArticles";
+import CardArticle from "../Cards/CardArticle/CardArticle";
 
 const listProduct_1 = [
     {

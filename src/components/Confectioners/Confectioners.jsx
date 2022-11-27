@@ -1,5 +1,5 @@
 import SlickSlider from "../SlickSlider/SlickSlider";
-import CardArticle from "../Cards/CardArticle/CardArticles";
+import CardArticle from "../Cards/CardArticle/CardArticle";
 import { listArticles, confectioners } from "./data";
 import SearchContainer from "./Search/SearchContainer";
 

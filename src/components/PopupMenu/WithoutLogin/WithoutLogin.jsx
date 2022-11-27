@@ -16,7 +16,7 @@ const WithoutLogin = (props) => {
                     <nav className={s.list}>
                         <NavLink to="/desserts" className={s.href}>Десерти</NavLink>
                         <NavLink to="/confectioners" className={s.href}>Кращі кондитери</NavLink>
-                        <NavLink to="/" className={s.href}>Корисні статті</NavLink>
+                        <NavLink to="/articles" className={s.href}>Корисні статті</NavLink>
                     </nav>
                 </div>
                 <div className={s.item}>

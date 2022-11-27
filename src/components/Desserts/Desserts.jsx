@@ -2,7 +2,7 @@ import { listConfectioners, listArticles } from "./data.js";
 
 import SlickSlider from "../SlickSlider/SlickSlider";
 import CardConfectioner from "../Cards/CardConfectioner/CardConfectioner";
-import CardArticle from "../Cards/CardArticle/CardArticles";
+import CardArticle from "../Cards/CardArticle/CardArticle";
 import SearchContainer from "./Search/SearchContainer.jsx";
 
 const Desserts = (props) => {

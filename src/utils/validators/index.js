@@ -1,9 +1,7 @@
 import {phone} from "phone";
 
 export const phoneValidator = value => {
-    if(phone(value, {country: 'UA'}).isValid != true){
-        return "Неправильний номер телефону";
-    }
+    if(phone(value, {country: 'UA'}).isValid != true) return "Неправильний номер телефону";
 }
 
 export const numberValidator = value => {
@@ -11,3 +9,29 @@ export const numberValidator = value => {
 
     return false;
 }
+
+export const presenceSomething = value => {
+    console.log(!/\S/.test(value));
+    if(!/\S/.test(value)) return "Де текст?" 
+}
+
+const validate = (values, validators)  => {
+    let errors = {};
+
+    for (const key in values) {
+        if(validators[key]){
+            const error = validators[key](values[key]);
+
+            if(typeof(error) === "string"){
+                errors = {
+                    ...errors,
+                    [key]: error 
+                }
+            }
+        }
+    }
+
+    return errors;
+};
+
+export default validate;

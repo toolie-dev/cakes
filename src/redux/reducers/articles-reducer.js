@@ -1,16 +1,17 @@
-const SET_ACTIVE_PAGE = "SET-ACTIVE-PAGE/confectioners";
-const SET_TAGS = "SET-TAGS/confectioners";
-const DELETE_RESULT = "DELETE-RESULT/confectioners";
-const SET_RESULT = "SET-RESULT/confectioners";
+const SET_ACTIVE_PAGE = "SET-ACTIVE-PAGE/articles";
+const SET_TAGS = "SET-TAGS/articles";
+const SET_TYPES = "SET-TYPES/articles";
+const DELETE_RESULT = "DELETE-RESULT/articles";
+const SET_RESULT = "SET-RESULT/articles";
 
 const initialState = {
-    tags: [],
+    types: [],
     numberPage: 15,
     activePage: 8,
     result: []
 }
 
-const confectionersReducer = (state = initialState, action) => {
+const articlesReducer = (state = initialState, action) => {
     switch(action.type){
         case SET_ACTIVE_PAGE:
             const result = state.activePage + action.number;
@@ -20,12 +21,12 @@ const confectionersReducer = (state = initialState, action) => {
                     activePage: result
                 }
             }
-        case SET_TAGS:
+        case SET_TYPES:
             return {
                 ...state,
-                tags: state.tags.some(item => item === action.tag)?
-                state.tags.filter(item => item != action.tag):
-                [...state.tags, action.tag]
+                types: state.types.some(item => item === action.typeDessert)?
+                state.types.filter(item => item != action.typeDessert):
+                [...state.types, action.typeDessert]
             }
         case DELETE_RESULT:
             return{
@@ -47,8 +48,8 @@ const confectionersReducer = (state = initialState, action) => {
 }
 
 export const setActivePage = (number) => ({type: SET_ACTIVE_PAGE, number});
-export const setTags = (tag) => ({type: SET_TAGS, tag});
+export const setTypes = (typeDessert) => ({type: SET_TYPES, typeDessert});
 export const deleteResult = (id) => ({type: DELETE_RESULT, id});
 export const setResult = (text) => ({type: SET_RESULT, text});
 
-export default confectionersReducer;
+export default articlesReducer;

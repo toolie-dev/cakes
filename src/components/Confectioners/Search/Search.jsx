@@ -18,14 +18,14 @@ const Search = (props) => {
 
     const onClick = (tag) => {
         setTags({...tags, [tag]: !tags[tag]});
-        props.setTypes(tag);
+        props.setTags(tag);
     }
 
     return(
         <section className={s.search}>
             <Container>
                 <div className={s.wrapper}>
-                    <SearchForm />
+                    <SearchForm placeholder="Шоколадний торт з квітами" result={props.result} deleteResult={props.deleteResult} setResult={props.setResult} />
                     <div>
                         <div className={s.chooseCity}>
                             <ChooseCity isTransparent={true} isAllWidth={true} text="Вся Україна" />

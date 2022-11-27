@@ -4,3 +4,26 @@
     row-gap: 2.5rem;/*40*/
     margin-bottom: 1.875rem;/*30*/
 }
+
+.title{
+    margin-bottom: 1.25rem;/*20*/
+    display: none;
+}
+
+@media (max-width: 87.5rem){/*1400*/ 
+}
+
+@media (max-width: 75rem){/*1200*/
+}
+
+@media (max-width: 62rem){/*992*/
+}
+
+@media (max-width: 47.625rem){/*762*/
+    .title{
+        display: block;
+    }
+}
+
+@media (max-width: 36rem){/*576*/
+}
