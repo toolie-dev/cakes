@@ -9,6 +9,10 @@
     grid-row: 1/3;
 }
 
+.withoutDescription .image{
+    grid-row: 1/4;
+}
+
 .image img{
     border-radius: 0.3125rem;/*5*/
     height: 100%;
@@ -17,11 +21,23 @@
 }
 
 .tags{
-    grid-column: 1/3;
     display: flex;
-    margin-top: 1.875rem;/*30*/
     gap: 0.625rem 0.3125rem;/*10 5*/
     flex-wrap: wrap;
+}
+
+.wrapper{
+    grid-column: 1/3;
+    margin-top: 1.875rem;/*30*/
+}
+
+.withoutDescription .wrapper{
+    grid-column: auto;
+    grid-row: 2/3;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .desc{
@@ -98,6 +114,12 @@
 
     .name{
         font-size: 1.125rem;/*18*/
+    }
+
+    .withoutDescription .wrapper{
+        grid-column: 1/3;
+        grid-row: auto;
+        margin-top: 1.875rem;/*30*/
     }
 }
 
