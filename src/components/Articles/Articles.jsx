@@ -4,6 +4,7 @@ import { articles } from "./data.js";
 import SearchForm from "../SearchForm/SearchForm";
 import SearchAside from "../SearchAside/SearchAside";
 import SearchMain from "../SearchMain/SearchMain";
+import CardArticle from "../Cards/CardArticle/CardArticle";
 
 const list =[
     {
@@ -34,6 +35,7 @@ const list =[
 ];
 
 const Articles = (props) => {
+    const items = articles.map((item, i) => <CardArticle key={i + 1} isNeedWrepper={false} isSearch={true} {...item}/>);
     return(
         <main>
             <section className={s.search}>
@@ -43,7 +45,7 @@ const Articles = (props) => {
                             <SearchForm placeholder="Як приготувати класичний чізкейк" setResult={props.setResult} deleteResult={props.deleteResult} result={props.result} />
                         </div> 
                         <SearchAside setTypes={props.setTypes} title="Цікаві та корисні статті" list={list} />
-                        <SearchMain numberColumn={3} list={articles} setActivePage={props.setActivePage} numberPage={props.numberPage} activePage={props.activePage} />
+                        <SearchMain numberColumn={3} items={items} setActivePage={props.setActivePage} numberPage={props.numberPage} activePage={props.activePage} />
                     </div>
                 </Container>
             </section>

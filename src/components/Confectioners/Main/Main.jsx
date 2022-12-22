@@ -1,8 +1,8 @@
 import s from "./Main.module.css";
-import { MoreGoodies } from "../../../common/Btn/Btns/Btns";
-import Pagination from "../../../Pagination/Pagination";
+import { MoreGoodies } from "../../common/Btn/Btns/Btns";
+import Pagination from "../../Pagination/Pagination";
 import Item from "./Item/Item";
-import Title from "../../../common/Title/Title";
+import Title from "../../common/Title/Title";
 
 const Main = (props) => {
     return(

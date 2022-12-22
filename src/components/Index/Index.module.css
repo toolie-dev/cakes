@@ -1,0 +1,14 @@
+@media (max-width: 75rem){/*1200*/
+}
+
+@media (max-width: 62rem){/*992*/
+}
+
+@media (max-width: 47.625rem){/*762*/
+    .main{
+        padding-top: 0.9375rem;/*15*/
+    }
+}
+
+@media (max-width: 36rem){/*576*/
+}

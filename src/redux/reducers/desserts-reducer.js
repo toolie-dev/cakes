@@ -24,11 +24,10 @@ const initialState = {
 const dessertsReducer = (state = initialState, action) => {
     switch(action.type){
         case SET_ACTIVE_PAGE:
-            const result = state.activePage + action.number;
-            if(result > 0 && result <= state.numberPage){
+            if(action.number > 0 && action.number <= state.numberPage){
                 return{
                     ...state,
-                    activePage: result
+                    activePage: action.number
                 }
             }
         case SET_TYPES:

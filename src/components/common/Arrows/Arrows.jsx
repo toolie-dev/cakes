@@ -1,4 +1,4 @@
-export default (props) => {
+const Arrows = (props) => {
     const { className, style, onClick } = props;
     return (
         <div
@@ -8,3 +8,5 @@ export default (props) => {
         />
     );
 }
+
+export default Arrows;

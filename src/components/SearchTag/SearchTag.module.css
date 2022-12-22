@@ -1,23 +1,13 @@
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    row-gap: 2.5rem;/*40*/
-}
-
 .tags{
     gap: 0.625rem;/*10*/
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: -0.625rem;/*10*/
 }
 
 .chooseCity{
-    margin-bottom: 0.9375rem;/*15*/
     display: none;
-}
-
-
-
-@media (max-width: 87.5rem){/*1400*/ 
+    margin-bottom: 0.9375rem;/*15*/
 }
 
 @media (max-width: 75rem){/*1200*/
@@ -27,9 +17,6 @@
 }
 
 @media (max-width: 47.625rem){/*762*/
-    .wrapper{
-        row-gap: 1.875rem;/*30*/
-    }
 }
 
 @media (max-width: 36rem){/*576*/

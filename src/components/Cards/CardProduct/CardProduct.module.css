@@ -56,6 +56,9 @@
 }
 
 @media (max-width: 87.5rem){/*1400*/ 
+    .search .title{
+        min-height: 2.5rem;/*40*/
+    }
 }
 
 @media (max-width: 75rem){/*1200*/
@@ -69,6 +72,18 @@
 
     .mini .title{
         min-height: 5rem;/*80*/
+    }
+
+    .mini .img{
+        height: 15.625rem;/*250*/
+    }
+
+    .mini .wrap{
+        padding: 0.625rem;/*10*/
+    }
+
+    .search .title{
+        min-height: 3.75rem;/*60*/
     }
 }
 
@@ -86,6 +101,18 @@
     .mini .img{
         height: 12.5rem;/*200*/
     }
+
+    .search .img{
+        height: 12.5rem;/*200*/
+    }
+
+    .search .wrap{
+        padding: 0.625rem 0.3125rem;/*10 5*/
+    }
+
+    .search .title{
+        min-height: 5rem;/*80*/
+    }
 }
 
 @media (max-width: 36rem){/*576*/
@@ -93,12 +120,21 @@
         font-size: 0.875rem;/*14*/
     }
 
-    .wrap{
-        padding: 0.625rem 0.3125rem;/*10 5*/
-    }
-
     .mini .img{
         height: 10.9375rem;/*175*/
+    }
+
+    .search .img{
+        height: 17.1875rem;/*275*/
+    }
+
+    .search .wrap{
+        padding: 0.625rem;/*10*/
+    }
+
+    .search .title{
+        min-height: 3.75rem;/*60*/
+        font-size: 1rem;/*16*/
     }
 }
 
@@ -114,15 +150,46 @@
     .mini .img{
         height: 15.625rem;/*250*/
     }
+
+    .search .img{
+        height: 15.625rem;/*250*/
+    }
+
+    .search .wrap{
+        padding: 0.625rem;/*10*/
+    }
+
+    .search .title{
+        min-height: 3.75rem;/*60*/
+    }
 }
 
-@media (max-width: 28.125rem){/*450*/
+@media (max-width: 29.6875rem){/*475*/
     .img{
         height: 12.5rem;/*200*/
     }
 
     .mini .img{
         height: 12.5rem;/*200*/
+    }
+}
+
+@media (max-width: 26.5625rem){/*425*/
+    .search .img{
+        height: 12.5rem;/*200*/
+    }
+
+    .search .wrap{
+        padding: 0.625rem 0.3125rem;/*10 5*/
+    }
+
+    .search .title{
+        font-size: 0.875rem;/*14*/
+        min-height: 3.4375rem;/*55*/
+    }
+
+    .search .detail{
+        font-size: 0.75rem;/*12*/
     }
 }
 
@@ -133,6 +200,14 @@
 
     .mini .img{
         height: 10.9375rem;/*175*/
+    }
+
+    .search .img{
+        height: 10.9375rem;/*175*/
+    }
+
+    .search .title{
+        min-height: 4.375rem;/*70*/
     }
 }
 
@@ -160,5 +235,9 @@
 
     .mini .img{
         height: 18.75rem;/*300*/
+    }
+
+    .search .img{
+        height: 9.375rem;/*150*/
     }
 }

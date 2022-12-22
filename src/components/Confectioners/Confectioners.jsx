@@ -1,13 +1,25 @@
+import s from "./Confectioners.module.css";
 import SlickSlider from "../SlickSlider/SlickSlider";
 import CardArticle from "../Cards/CardArticle/CardArticle";
 import { listArticles, confectioners } from "./data";
-import SearchContainer from "./Search/SearchContainer";
+import Container from "../common/Container/Container";
+import SearchTag from "../SearchTag/SearchTag";
+import SearchForm from "../SearchForm/SearchForm";
+import MainContainer from "./Main/MainContainer";
 
 const Confectioners = (props) => {
     const articles = listArticles.map((item, i) => <CardArticle key={i + 1} {...item} />);
     return(
         <main>
-            <SearchContainer confectioners={confectioners} />
+            <section className={s.search}>
+                <Container>
+                    <div className={s.wrapper}>
+                        <SearchForm placeholder="Шоколадний торт з квітами" result={props.result} deleteResult={props.deleteResult} setResult={props.setResult} />
+                        <SearchTag setTags={props.setTags} />
+                        <MainContainer confectioners={confectioners} />
+                    </div>
+                </Container>
+            </section>
             <SlickSlider settings={{
                 responsive: [
                     {

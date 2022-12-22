@@ -1,0 +1,128 @@
+.user{
+    display: grid;
+    grid-template-columns: 12.5rem auto;/*200*/
+    column-gap: 3.125rem;/*50*/
+}
+
+.image{
+    height: 12.5rem;/*200*/
+    grid-row: 1/3;
+}
+
+.image img{
+    border-radius: 0.3125rem;/*5*/
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.tags{
+    grid-column: 1/3;
+    display: flex;
+    margin-top: 1.875rem;/*30*/
+    gap: 0.625rem 0.3125rem;/*10 5*/
+    flex-wrap: wrap;
+}
+
+.desc{
+    grid-column: 1/3;
+    margin-top: 1.25rem;/*20*/
+    line-height: 1.5em;/*24/16*/
+    color: #43607C;
+}
+
+.btn{
+    display: flex;
+    margin: 0.625rem 0;/*10*/
+}
+
+.wrap{
+    display: flex;
+    align-items: flex-end;
+    margin: 0.625rem 0;/*10*/
+    column-gap: 0.625rem;/*10*/
+}
+
+.name{
+    font-size: 1.25rem;/*20*/
+    color: #43607C;
+}
+
+.city{
+    font-size: 0.875rem;/*14*/
+    color: #84A6C2;
+}
+
+.item{
+    font-size: 0.875rem;/*14*/
+    color: #A63A50;
+    padding: 0.3125rem 0.625rem;/*5 10*/
+    background: #FFF2F2;
+    border-radius: 1.875rem;/*30*/
+    display: flex;
+    align-items: center;
+}
+
+.paragraph{
+    margin-bottom: 0.625rem;/*10*/
+}
+
+.paragraph:last-child{
+    margin-bottom: 0;
+}
+
+@media (max-width: 87.5rem){/*1400*/ 
+    .user{
+        column-gap: 2.5rem;/*40*/
+    }
+}
+
+@media (max-width: 75rem){/*1200*/
+    .user{
+        column-gap: 20px;/*40*/
+    }
+}
+
+@media (max-width: 62rem){/*992*/
+    
+}
+
+@media (max-width: 47.625rem){/*762*/
+    .user{
+        grid-template-columns: 9.375rem auto;/*150*/
+    }
+    
+    .image{
+        height: 9.375rem;/*150*/
+    }
+
+    .name{
+        font-size: 1.125rem;/*18*/
+    }
+}
+
+@media (max-width: 36rem){/*576*/
+    .user{
+        grid-template-columns: 6.25rem auto;/*100*/
+    }
+    
+    .image{
+        height: 6.25rem;/*100*/
+    }
+
+    .wrap{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 0;
+        row-gap: 0.625rem;/*10*/
+    }
+
+    .name{
+        font-size: 1rem;/*16*/
+    }
+
+    .paragraph{
+        font-size: 0.875rem;/*14*/
+    }
+}

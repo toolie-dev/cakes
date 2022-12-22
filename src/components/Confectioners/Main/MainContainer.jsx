@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { compose } from 'redux';
-import { setActivePage } from '../../../../redux/reducers/confectioners-reducer';
+import { setActivePage } from '../../../redux/reducers/confectioners-reducer';
 import Main from './Main';
 
 const mapStateToProps = (state) => ({

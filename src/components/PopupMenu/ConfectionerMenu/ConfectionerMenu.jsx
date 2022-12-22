@@ -43,13 +43,13 @@ const ConfectionerMenu = (props) => {
                 <div className={s.item}>
                     <ol className={s.categories}>
                         <li>
-                            <Btn isHref={true} to="/" otherClass="menuListMain" backgroundColor="red" isAllWidth={true}>Торти</Btn>
+                            <Btn to="/" otherClass="menuListMain" backgroundColor="red" isAllWidth={true}>Торти</Btn>
                         </li>
                         <li>
-                            <Btn isHref={true} to="/" otherClass="menuList" backgroundColor="pinkTransparent" isAllWidth={true}>Капкейки</Btn>
+                            <Btn to="/" otherClass="menuList" backgroundColor="pinkTransparent" isAllWidth={true}>Капкейки</Btn>
                         </li>
                         <li>
-                            <Btn isHref={true} to="/" otherClass="menuList" backgroundColor="pinkTransparent" isAllWidth={true}>Макаруни</Btn>
+                            <Btn to="/" otherClass="menuList" backgroundColor="pinkTransparent" isAllWidth={true}>Макаруни</Btn>
                         </li>
                     </ol>
                     <button className={s.button}>

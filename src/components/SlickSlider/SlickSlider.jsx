@@ -6,13 +6,13 @@ import Container from "../common/Container/Container";
 import { NavLink } from "react-router-dom";
 import Slider from "react-slick";
 import { useState } from "react";
-import Arrows from "./Arrows/Arrows";
 import Img from "../common/Img/Img";
 import Title from "../common/Title/Title";
 import Btn from "../common/Btn/Btn";
 import classNames from "classnames";
+import Arrows from "../common/Arrows/Arrows";
 
-const ProductSlider = (props) => {
+const SlickSlider = (props) => {
     const [slider, setSlider] = useState(null);
 
     const nextSlide = () => {
@@ -58,19 +58,17 @@ const ProductSlider = (props) => {
         settings = props.settings;
     }
 
-    const ProductSlider = (
+    const SlickSlider = (
         <>
             <div className={s.wrapper}>
                 <Title isMini={props.isMini} otherClass="slider">{props.title}</Title>
                 <div className={s.wrap}>
-                    <NavLink>
-                        <Btn backgroundColor="grey">Переглянути всі</Btn>
-                    </NavLink>
+                    <Btn to="/2" backgroundColor="grey">Переглянути всі</Btn>
                     <div className={s.buttons}>
-                        <button onClick={ () => { prevSlide() } }>
+                        <button onClick={prevSlide}>
                             <Img height={24} src={arrow_left} alt="arrow" />
                         </button>
-                        <button onClick={ () => { nextSlide() } }>
+                        <button onClick={nextSlide}>
                             <Img height={24} src={arrow_right} alt="arrow" />
                         </button>
                     </div>
@@ -85,6 +83,7 @@ const ProductSlider = (props) => {
                         speed: 500,
                         slidesToScroll: 1,
                         initialSlide: 0,
+                        swipeToSlide: true,
                         nextArrow: <Arrows />,
                         prevArrow: <Arrows />,
                         ...props.settings
@@ -96,12 +95,12 @@ const ProductSlider = (props) => {
         </>
     )
     
-    if(props.isMini) return <div className={classNames(props.className, s.mini)}>{ProductSlider}</div>
+    if(props.isMini) return <div className={classNames(props.className, s.mini)}>{SlickSlider}</div>
     else return(
         <section className={props.isMini && s.mini}>
-            <Container>{ProductSlider}</Container>
+            <Container>{SlickSlider}</Container>
         </section>
     )
 }
 
-export default ProductSlider;
+export default SlickSlider;

@@ -4,9 +4,9 @@ import { deleteResult, setResult, setTags, setTypes } from '../../../redux/reduc
 import Search from "./Search";
 
 const mapStateToProps = (state) => ({
-  result: state.desserts.result
+    result: state.desserts.result
 })
 
 export default compose(
-  connect(mapStateToProps, { setTypes, setTags, deleteResult, setResult }),
+    connect(mapStateToProps, { setTypes, setTags, deleteResult, setResult }),
 )(Search);

@@ -5,6 +5,7 @@
 }
 
 .item{
+    cursor: pointer;
     width: 3.125rem;/*50*/
     height: 3.125rem;/*50*/
     border: 0.0625rem solid #FFE2CA;/*1*/

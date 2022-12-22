@@ -35,12 +35,6 @@ main{
     flex: 1 1;
 }
 
-@media (max-width: 100rem){/*1600*/
-}
-
-@media (max-width: 87.5rem){/*1400*/
-}
-
 @media (max-width: 75rem){/*1200*/
     main{
         margin-top: calc((1.25rem * 2) + 3.125rem);/*(20 * 2) + 50*/
@@ -56,7 +50,7 @@ main{
     }
 
     main{
-        padding: 0.9375rem 0 2.8125rem 0;/*15 45*/
+        padding: 1.875rem 0 2.8125rem 0;/*15 45*/
     }
 }
 

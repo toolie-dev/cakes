@@ -1,7 +1,7 @@
 import s from "./Item.module.css";
-import CardConfectioner from "../../../../Cards/CardConfectioner/CardConfectioner";
-import SlickSlider from "../../../../SlickSlider/SlickSlider";
-import CardProduct from "../../../../Cards/CardProduct/CardProduct";
+import CardConfectioner from "../../../Cards/CardConfectioner/CardConfectioner";
+import SlickSlider from "../../../SlickSlider/SlickSlider";
+import CardProduct from "../../../Cards/CardProduct/CardProduct";
 
 const Item = (props) => {
     const products = props.products.map((item, i) => <CardProduct key={i + 1} isMini={true} {...item} />);

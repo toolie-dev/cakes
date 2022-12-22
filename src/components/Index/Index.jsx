@@ -20,7 +20,7 @@ import ArticlesPhoto_3 from "../../assets/img/Articles/photo_3.png";
 import ArticlesPhoto_4 from "../../assets/img/Articles/photo_4.png";
 import ArticlesPhoto_5 from "../../assets/img/Articles/photo_5.png";
 
-//import s from "./Index.module.css"
+import s from "./Index.module.css";
 import InfoContainer from "./Info/InfoContainer";
 import Promo from "./Promo/Promo";
 import SlickSlider from "../SlickSlider/SlickSlider";
@@ -152,7 +152,7 @@ const Index = (props) => {
         confectioners = listConfectioners.map((item, i) => <CardConfectioner key={i + 1} {...item} />),
         articles = listArticles.map((item, i) => <CardArticle key={i + 1} {...item} />);
     return(
-        <main>
+        <main className={s.main}>
             <Promo />
             <SlickSlider items={itemsProduct_1} title="Торти" />
             <SlickSlider items={itemsProduct_2} title="Капкейки" />

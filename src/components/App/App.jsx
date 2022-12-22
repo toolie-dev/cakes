@@ -5,9 +5,10 @@ import IndexContainer from '../Index/IndexContainer';
 import PopupMenuContainer from '../PopupMenu/PopupMenuContainer';
 import Footer from '../Footer/Footer';
 import PopupAuthContainer from '../PopupAuth/PopupAuthContainer';
-import Desserts from '../Desserts/Desserts';
-import Confectioners from '../Confectioners/Confectioners';
+import ConfectionersContainer from '../Confectioners/ConfectionersContainer';
 import ArticlesContainer from '../Articles/ArticlesContainer';
+import DessertsContainer from '../Desserts/DessertsContainer';
+import DessertPageContainer from '../DessertPage/DessertPageContainer';
 
 const App = (props) => {
     return (
@@ -17,8 +18,9 @@ const App = (props) => {
                 <Routes>
                     <Route path="" element={ <Navigate to="/index" /> } />
                     <Route path="/index" element={<IndexContainer />} />
-                    <Route path="/desserts" element={<Desserts />} />
-                    <Route path="/confectioners" element={<Confectioners />} />
+                    <Route path="/desserts" element={<DessertsContainer />} />
+                    <Route path="/dessert/:dessertId" element={<DessertPageContainer />} />
+                    <Route path="/confectioners" element={<ConfectionersContainer />} />
                     <Route path="/articles" element={<ArticlesContainer />} />
                 </Routes>
             </div>

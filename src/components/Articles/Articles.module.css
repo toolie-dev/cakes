@@ -31,6 +31,9 @@
 }
 
 @media (max-width: 47.625rem){/*762*/
+    .wrapper{
+        row-gap: 1.875rem;/*30*/
+    }
 }
 
 @media (max-width: 36rem){/*576*/

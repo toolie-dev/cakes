@@ -117,7 +117,7 @@
 
 @media (max-width: 29.6875rem){/*475*/
     .input::placeholder{
-        font-size: 12px;
+        font-size: 0.75rem;/*12*/
     }  
     
     .input{
