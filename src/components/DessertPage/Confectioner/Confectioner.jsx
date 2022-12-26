@@ -4,8 +4,8 @@ import Reviews from "./Reviews/Reviews";
 import User from "./User/User";
 
 const Confectioner = (props) => {
-    const isReviews = false,
-        isDescription = false;
+    const isReviews = true,
+        isDescription = true;
     return(
         <section className={s.confectioners}>
             <Container>

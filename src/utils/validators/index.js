@@ -11,7 +11,6 @@ export const numberValidator = value => {
 }
 
 export const presenceSomething = value => {
-    console.log(!/\S/.test(value));
     if(!/\S/.test(value)) return "Де текст?" 
 }
 

@@ -5,7 +5,7 @@ import Btn from "../../common/Btn/Btn";
 
 const CardArticle = ({isNeedWrepper = true, ...props}) => {
     const CardArticle = (
-        <NavLink to="/" className={classNames(s.item, props.isSearch && s.search)}>
+        <NavLink to="/article/1" className={classNames(s.item, props.isSearch && s.search)}>
             <div className={s.wrapper}>
                 <div className={s.img}>
                     <img src={props.img} alt="photo" />

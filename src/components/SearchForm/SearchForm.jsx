@@ -39,11 +39,12 @@ const Form = (props) => {
     )
 }
 
-const SearchForm = (props) => {
+const SearchForm = ({isResult = true, ...props}) => {
     return(
         <div>
             <Form placeholder={props.placeholder} setResult={props.setResult} />
-            {props.result.length != 0 &&
+            {isResult && 
+            (props.result.length != 0 &&
             <div className={s.wrap}>
                 {
                     props.result.map((item, i) => (
@@ -56,7 +57,7 @@ const SearchForm = (props) => {
                         </div>
                     ))
                 }
-            </div>}
+            </div>)}
         </div>
     )
 }

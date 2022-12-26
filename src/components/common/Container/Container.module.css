@@ -4,6 +4,10 @@
     margin: 0 auto;
 }
 
+.container.mini{
+    max-width: 62.5rem;/*1000*/
+}
+
 @media (max-width: 100rem){/*1600*/
     .container{
         max-width: 81.25rem;/*1300*/
@@ -20,10 +24,18 @@
     .container{
         max-width: 61.25rem;/*980*/
     }
+
+    .container.mini{
+        max-width: 61.25rem;/*980*/
+    }
 }
 
 @media (max-width: 62rem){/*992*/
     .container{
+        max-width: 46.25rem;/*740*/
+    }
+
+    .container.mini{
         max-width: 46.25rem;/*740*/
     }
 }
@@ -32,11 +44,19 @@
     .container{
         max-width: 35rem;/*560*/
     }
+
+    .container.mini{
+        max-width: 35rem;/*560*/
+    }
 }
 
 @media (max-width: 36rem){/*576*/
     .container{
         max-width: 100%;
         padding: 0 0.9375rem;/*15*/
+    }
+
+    .container.mini{
+        max-width: 100%;
     }
 }

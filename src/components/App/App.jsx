@@ -9,6 +9,7 @@ import ConfectionersContainer from '../Confectioners/ConfectionersContainer';
 import ArticlesContainer from '../Articles/ArticlesContainer';
 import DessertsContainer from '../Desserts/DessertsContainer';
 import DessertPageContainer from '../DessertPage/DessertPageContainer';
+import ArticlePageContainer from '../ArticlePage/ArticlePageContainer';
 
 const App = (props) => {
     return (
@@ -22,6 +23,7 @@ const App = (props) => {
                     <Route path="/dessert/:dessertId" element={<DessertPageContainer />} />
                     <Route path="/confectioners" element={<ConfectionersContainer />} />
                     <Route path="/articles" element={<ArticlesContainer />} />
+                    <Route path="/article/:articlesId" element={<ArticlePageContainer />} />
                 </Routes>
             </div>
             <Footer />

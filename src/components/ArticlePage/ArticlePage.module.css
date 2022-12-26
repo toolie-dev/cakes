@@ -1,0 +1,18 @@
+.wrapper{
+    margin-bottom: 2.5rem;/*40*/
+}
+
+@media (max-width: 75rem){/*1200*/
+}
+
+@media (max-width: 62rem){/*992*/
+}
+
+@media (max-width: 47.625rem){/*762*/
+}
+
+@media (max-width: 36rem){/*576*/
+    .wrapper{
+        margin-bottom: 1.875rem;/*30*/
+    }
+}
