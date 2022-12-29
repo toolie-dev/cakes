@@ -14,7 +14,7 @@ const Tags = (props) => {
 
 const CardConfectioner = ({isNeedWrapper = true, ...props}) => {
     const CardConfectioner = (
-        <NavLink to="/" className={classNames(s.item, props.isMini && s.mini)}>
+        <NavLink to="/confectioner/1" className={classNames(s.item, props.isMini && s.mini)}>
             <div className={s.wrapper}>
                 <div className={s.img}>
                     <img src={props.img} alt="photo" />

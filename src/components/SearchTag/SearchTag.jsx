@@ -3,7 +3,7 @@ import Btn from "../common/Btn/Btn"
 import { ChooseCity } from "../common/Btn/Btns/Btns";
 import { useState } from "react";
 
-const SearchTag = (props) => {
+const SearchTag = ({isChooseCity = true, ...props}) => {
     const [tags, setTags] = useState({
         cupcakes: false,
         cakes: false,
@@ -20,9 +20,12 @@ const SearchTag = (props) => {
 
     return (
         <div className={s.wrap}>
-            <div className={s.chooseCity}>
-                <ChooseCity isTransparent={true} isAllWidth={true} text="Вся Україна" />
-            </div>
+            {
+                isChooseCity &&
+                <div className={s.chooseCity}>
+                    <ChooseCity isTransparent={true} isAllWidth={true} text="Вся Україна" />
+                </div>
+            }
             <div className={s.tags}>
                 <Btn onClick={ () => { onClick("cupcakes") } } isActive={tags.cupcakes} otherClass="tag" backgroundColor="pink">Капкейки</Btn>
                 <Btn onClick={ () => { onClick("cakes") } } otherClass="tag" isActive={tags.cakes} backgroundColor="pink">Торти</Btn>

@@ -1,0 +1,103 @@
+.wrapper{
+    margin-bottom: 2.5rem;/*40*/
+}
+
+.btns{
+    min-width: 17.5rem;/*280*/
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem 1.25rem;/*10 20*/
+    align-items: flex-start;
+}
+
+.btn{
+    border-radius: 3.125rem;/*50*/
+    padding: 0.625rem 1.25rem;/*10 20*/
+    border: 0.0625rem solid #C8E6FF;/*1*/
+    width: 100%;
+    text-align: start;
+    color: #43607C;
+    font-size: 1.125rem;/*18*/
+}
+
+.active{
+    background: #43607C;
+    border: none;
+    color: #fff;
+}
+
+.wrap{
+    display: grid;
+    grid-template-columns: 17.5rem auto;/*280*/
+    column-gap: 2.5rem;/*40*/
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.875rem;/*30*/
+    grid-row: 2/4;
+    grid-column: 2/3;
+}
+
+.info,
+.title{
+    margin-bottom: 1.875rem;/*30*/
+}
+
+.info div:last-child{
+    margin-bottom: 0;
+}
+
+@media (max-width: 75rem){/*1200*/
+}
+
+@media (max-width: 62rem){/*992*/
+    .wrap{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info{
+        margin-bottom: 0;
+    }
+
+    .title{
+        display: none;
+    }
+
+    .wrap{
+        row-gap: 1.875rem;/*30*/
+    }
+
+    .wrap{
+        flex-direction: column;
+    }
+
+    .btns{
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 47.625rem){/*762*/
+    .wrap{
+        row-gap: 1.875rem;/*30*/
+    }
+
+    .wrapper{
+        display: none;
+    }
+}
+
+@media (max-width: 36rem){/*576*/
+}
+
+@media (max-width: 31.25rem){/*500*/
+    .btns{
+        flex-direction: column;
+    }
+    
+    .btn{
+        text-align: center;
+    }
+}

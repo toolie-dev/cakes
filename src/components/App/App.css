@@ -12,13 +12,9 @@ main section{
     margin-bottom: 5rem;/*80*/
 }
 
-main section:last-child{
-    margin-bottom: 0;
-}
-
 main{
     margin-top: calc((1.25rem * 2) + 2.5rem);/*(20 * 2) + 40*/
-    padding: 2.5rem 0 5rem 0;/*40 80*/
+    padding-top: 2.5rem;/*80*/
 }
 
 .my-element {

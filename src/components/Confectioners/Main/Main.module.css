@@ -10,6 +10,12 @@
     display: none;
 }
 
+.footer{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;/*40*/
+}
+
 @media (max-width: 87.5rem){/*1400*/ 
 }
 

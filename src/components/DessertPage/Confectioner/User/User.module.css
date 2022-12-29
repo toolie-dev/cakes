@@ -79,12 +79,10 @@
     align-items: center;
 }
 
-.paragraph{
-    margin-bottom: 0.625rem;/*10*/
-}
-
-.paragraph:last-child{
-    margin-bottom: 0;
+.desc{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.625rem;/*10*/
 }
 
 @media (max-width: 87.5rem){/*1400*/ 
@@ -144,7 +142,7 @@
         font-size: 1rem;/*16*/
     }
 
-    .paragraph{
+    .desc p{
         font-size: 0.875rem;/*14*/
     }
 }

@@ -7,6 +7,7 @@ import { ChooseCity } from "../../common/Btn/Btns/Btns";
 import { useState } from "react";
 import SearchForm from "../../SearchForm/SearchForm";
 import SearchAside from "../../SearchAside/SearchAside";
+import SearchTag from "../../SearchTag/SearchTag";
 
 const list =[
     {
@@ -70,20 +71,6 @@ const list =[
 ]
 
 const Search = (props) => {
-    const [tags, setTags] = useState({
-        cupcakes: false,
-        cakes: false,
-        cakePops: false,
-        macaroons: false,
-        cookies: false,
-        sweets: false
-    });
-
-    const onClick = (tag) => {
-        setTags({...tags, [tag]: !tags[tag]});
-        props.setTags(tag);
-    }
-
     return(
         <section className={s.search}>
             <Container>
@@ -95,14 +82,7 @@ const Search = (props) => {
                         <div className={s.chooseCity}>
                             <ChooseCity isTransparent={true} isAllWidth={true} text="Вся Україна" />
                         </div>
-                        <div className={s.tags}>
-                            <Btn onClick={ () => { onClick("cupcakes") } } isActive={tags.cupcakes} otherClass="tag" backgroundColor="pink">Капкейки</Btn>
-                            <Btn onClick={ () => { onClick("cakes") } } otherClass="tag" isActive={tags.cakes} backgroundColor="pink">Торти</Btn>
-                            <Btn onClick={ () => { onClick("cakePops") } } otherClass="tag" isActive={tags.cakePops} backgroundColor="pink">Кейк-попси</Btn>
-                            <Btn onClick={ () => { onClick("macaroons") } } otherClass="tag" isActive={tags.macaroons} backgroundColor="pink">Макаруни</Btn>
-                            <Btn onClick={ () => { onClick("cookies") } } otherClass="tag" isActive={tags.cookies} backgroundColor="pink">Печиво</Btn>
-                            <Btn onClick={ () => { onClick("sweets") } } otherClass="tag" isActive={tags.sweets} backgroundColor="pink">Цукерки</Btn>
-                        </div>
+                        <SearchTag setTags={props.setTags} />
                     </div> 
                     <SearchAside setTypes={props.setTypes} title="Шукаєш щось особливе?" list={list} />
                     <MainContainer products={products} />

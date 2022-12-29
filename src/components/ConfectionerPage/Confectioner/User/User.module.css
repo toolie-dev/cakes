@@ -1,0 +1,148 @@
+.user{
+    display: grid;
+    grid-template-columns: 12.5rem auto;/*200*/
+    column-gap: 3.125rem;/*50*/
+}
+
+.image{
+    grid-row: 1/3;
+    height: 12.5rem;/*200*/
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.3125rem;/*5*/
+}
+
+.desc{
+    grid-column: 1/3;
+    margin-top: 3.125rem;/*50*/
+}
+
+.btns{
+    margin-top: 1.25rem;/*20*/
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    row-gap: 0.3125rem;/*5*/
+}
+
+.city{
+    color: #84A6C2;
+}
+
+.name{
+    font-size: 2.1875rem;/*35*/
+    color: #011936;
+}
+
+.desc{
+    font-size: 0.875rem;/*14*/
+    line-height: 1.71428571428rem;/*24/14*/
+    color: #43607C;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.625rem;/*10*/
+}
+
+@media (max-width: 75rem){/*1200*/
+}
+
+@media (max-width: 62rem){/*992*/
+    .user{
+        column-gap: 1.5625rem;/*25*/
+    }
+
+    .desc{
+        margin-top: 1.5625rem;/*25*/
+    }
+
+    .user{
+        grid-template-columns: 10.9375rem auto;/*175*/
+    }
+    
+    .image{
+        height: 10.9375rem;/*175*/
+    }
+
+    .name{
+        font-size: 1.875rem;/*30*/
+    }
+}
+
+@media (max-width: 47.625rem){/*762*/
+    .user{
+        grid-template-columns: 9.375rem auto;/*150*/
+    }
+    
+    .image{
+        height: 9.375rem;/*150*/
+    }
+
+    .name{
+        font-size: 1.625rem;/*26*/
+    }
+}
+
+@media (max-width: 36rem){/*576*/
+    .name{
+        font-size: 1.375rem;/*22*/
+    }
+
+    .info{
+        justify-content: center;
+    }
+
+    .btns{
+        grid-column: 1/3;
+        max-width: 25rem;/*400*/
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 0.9375rem;/*15*/
+    }
+
+    .btns button{
+        width: 100%;
+    }
+
+    .user{
+        grid-template-columns: 7.8125rem auto;/*125*/
+        column-gap: 0.9375rem;/*15*/
+    }
+    
+    .image{
+        height: 7.8125rem;/*125*/
+        grid-row: 1/2;
+    }
+
+    .desc p{
+        font-size: 0.875rem;/*14*/
+    }
+
+    .desc{
+        margin-top: 0.9375rem;/*15*/
+    }
+
+    .city{
+        font-size: 0.875rem;/*14*/
+    }
+}
+
+@media (max-width: 26.5625rem){/*425*/
+    .user{
+        grid-template-columns: 6.25rem auto;/*100*/
+    }
+    
+    .image{
+        height: 6.25rem;/*100*/
+    }
+
+    .name{
+        font-size: 1.125rem;/*18*/
+    }
+}

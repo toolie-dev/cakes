@@ -2,6 +2,7 @@ import { applyMiddleware, combineReducers, compose, createStore } from "redux";
 import thunkMiddleware from "redux-thunk";
 import articlesReducer from "./reducers/articles-reducer";
 import authReducer from "./reducers/auth-reducer";
+import confectionerPageReducer from "./reducers/confectionerPage-reducer";
 import confectionersReducer from "./reducers/confectioners-reducer";
 import dessertsReducer from "./reducers/desserts-reducer";
 import popupReducer from "./reducers/popup-reducer";
@@ -12,7 +13,8 @@ let reducers = combineReducers({
     popup: popupReducer,
     desserts: dessertsReducer,
     confectioners: confectionersReducer,
-    articles: articlesReducer
+    articles: articlesReducer,
+    confectionerPage: confectionerPageReducer,
 });
 
 /*

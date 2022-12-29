@@ -12,6 +12,12 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.footer{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;/*40*/
+}
+
 @media (max-width: 100rem){/*1600*/ 
     .wrapper{
         grid-template-columns: 1fr 1fr 1fr;
